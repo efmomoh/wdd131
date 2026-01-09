@@ -16,7 +16,6 @@
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    padding-top: 100px;
 }
 
 #course-title {
@@ -28,7 +27,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     background: var(--bg-color);
@@ -66,6 +65,7 @@ nav ul li a:hover {
 
 h1 {
     text-align: center;
+    padding-top: 16px;
 }
 
 main {
