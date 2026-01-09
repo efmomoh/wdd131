@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Enssah Fayia Momoh</title>
+
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Enssah Fayia Momoh">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Enssah</h1>
+    <!-- Header -->
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/efmomoh/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </li>
+                <li><a href="#">I-Learn</a></li>
+                <li>
+                    <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">
+                        Canvas
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                        target="_blank" rel="noopener noreferrer">
+                        Scripture
+                    </a>
+                    <li><a href="#">Final Project</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <h1>Enssah Fayia Momoh</h1>
+
+    <main>
+
+        <section class="card">
+            <div class="about-container">
+                <h2>About Me</h2>
+
+                <p>
+                    My name is Enssah Fayia Momoh. I am a student of Brigham Young University–Idaho,
+                    where I am currently studying Software Development. I am originally from Liberia,
+                    and I am presently living in Suzhou, China. I have a strong interest in technology
+                    and problem-solving, and I enjoy learning new skills that will help me build
+                    innovative and practical software solutions for real-world challenges.
+                </p>
+
+                <img class="enssah" src="images/taurus.jpg" alt="Portrait of Enssah Fayia Momoh">
+
+                <span class="me">Enssah, Liberia</span>
+            </div>
+
+            <div class="flag-container">
+                <img class="lib-flag" src="images/Liberia.jpg" alt="The flag of Liberia">
+
+
+                <p class="flag-desc">
+                    Liberia is a West African nation known for its rich history as Africa’s first
+                    republic. It has diverse cultures, beautiful tropical rainforests, and a long
+                    Atlantic coastline. Liberia is home to warm, resilient people, abundant natural
+                    resources, and a growing spirit of hope, development, and national pride.
+                </p>
+                <span class="flag-name">The Flag of Liberi, LR</span>
+            </div>
+
+        </section>
+
+        <section class="card">
+            <div class="resource-container">
+                <h3>Web Dev Resources</h3>
+                <ul>
+                    <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing
+                            Magazine</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a>
+                    </li>
+                    <li><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+                    <li><a href="https://picsum.photos/" target="_blank" rel="noopener noreferrer">Lorem Picsum</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2025 <span id="currentyear"></span> 🕰️ Enssah Fayia Momoh 🌲 Liberia ❤️🤍💙
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
