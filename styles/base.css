@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #3636b6;
+    --secondary-color: #fbbc05;
+    --accent-color: #34a853;
+    --text-color: #222;
+    --bg-color: #ffffff;
+    --shadow-color: #808080;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +16,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    padding-top: 100px;
 }
 
 #course-title {
@@ -14,19 +24,19 @@ body {
     text-align: center;
     padding: 14px;
     font-size: 16px;
-    color: #fff;
+    color: var(--bg-color);
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: white;
+    background: var(--bg-color);
     z-index: 1000;
 }
 
 nav {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--text-color);
 }
 
 nav ul {
@@ -42,7 +52,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--bg-color);
     text-decoration: none;
     font-size: 16px;
 }
@@ -51,11 +61,10 @@ nav ul li a:hover {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 5px;
-    color: #fff;
+    color: var(--bg-color);
 }
 
 h1 {
-    font-weight: 100;
     text-align: center;
     padding: 16px;
 }
@@ -71,8 +80,9 @@ main {
 
 .card {
     padding: 10px;
-    background-color: #eee;
-    box-shadow: 10px 15px 4px #808080;
+    background-color: var(--bg-color);
+    box-shadow: 10px 15px 4px var(--shadow-color);
+    border-radius: 10px;
 }
 
 /* about container  */
@@ -83,8 +93,12 @@ main {
     margin-bottom: 16px;
 }
 
-h2 {
+h2,
+h3 {
     grid-column: span 2;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
 }
 
 .enssah {
@@ -96,7 +110,7 @@ h2 {
 .me {
     text-align: center;
     font-size: 20px;
-    border-bottom: 1px solid rgb(0, 0, 0, 10);
+    border-bottom: 1px solid var(--text-color);
     grid-column: 1 / 3;
     max-width: 400px;
     margin: 0 40px auto;
@@ -124,18 +138,12 @@ h2 {
 /* resource container  */
 .resource-container {
     display: grid;
-    grid-column: 1fr 1fr;
-}
-
-h2,
-h3 {
-    text-align: center;
-    font-size: 16px;
-    padding: 10px;
+    grid-template-columns: 1fr auto;
 }
 
 .resource-container ul {
     margin: 60px 40px 10px;
+    grid-column: 1 / 2;
 }
 
 .resource-container ul li {
@@ -143,8 +151,8 @@ h3 {
 }
 
 .resource-container ul li a:hover {
-    color: #fff;
-    background-color: #3636b6;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
 }
 
 footer {
@@ -157,8 +165,8 @@ h3,
 footer {
     max-width: 100%;
     height: auto;
-    background-color: #3636b6;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 footer p {
@@ -167,6 +175,6 @@ footer p {
 }
 
 #lastModified {
-    color: #ffff00;
+    color: var(--secondary-color);
     text-align: center;
 }
