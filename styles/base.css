@@ -4,6 +4,7 @@
     --accent-color: #34a853;
     --text-color: #222222;
     --bg-color: #ffffff;
+    --nav-bg: #343434;
     --shadow-color: #808080;
 }
 
@@ -35,7 +36,8 @@ header {
 }
 
 nav {
-    background-color: var(--text-color);
+    background-color: var(--nav-bg);
+    color: var(--bg-color);
 }
 
 nav ul {
