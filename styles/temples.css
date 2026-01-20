@@ -1,12 +1,5 @@
 /* temple.css */
 /* Mobile-first (small screens) */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --purple: #8a2be2;
     --black: #000000;
@@ -14,6 +7,12 @@
     --yellow: #ffff00;
     --red: #ff0000;
     --mooron: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -35,7 +34,6 @@ span {
 header {
     background-color: var(--purple);
     padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 8px 30px var(--mooron);
     color: var(--white);
 }
@@ -70,8 +68,7 @@ nav li a:hover {
     border-radius: 10px;
     letter-spacing: 0.2rem;
     background-color: var(--white);
-    color: #000;
-
+    color: var(--black);
 }
 
 footer,
