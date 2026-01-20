@@ -43,14 +43,15 @@ nav li {
 }
 
 span,
-nav li {
+nav li a {
     font-size: 1.5rem;
     color: white;
     text-align: center;
     padding: 0.5rem;
+    text-decoration: none;
 }
 
-nav li:hover {
+nav li a:hover {
     color: black;
     background-color: #e0e0e0;
     border-radius: 10px;
@@ -115,10 +116,6 @@ footer {
 
 #menu.open::before {
     content: "❌";
-}
-
-nav li {
-    display: none;
 }
 
 .open li {
