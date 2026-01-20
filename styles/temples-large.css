@@ -13,14 +13,21 @@
         justify-content: space-between;
     }
 
+    nav {
+        text-decoration: underline double;
+            background-color: black;
+            padding: 1rem;
+    }
+
     nav li {
         display: block;
     }
 
+
     main {
         max-width: 800px;
         margin: 0 auto;
-        padding: 2rem;
+        padding: 7rem 2rem;
     }
 
     /* 3-column grid for larger screens */
@@ -29,11 +36,15 @@
     }
 
     img {
-        max-width: 200px;
+        max-width: 220px;
+        height: 200;
     }
 
     footer {
         padding: .8rem;
+        line-height: 2rem;
+        position: fixed;
+        bottom: 0;
     }
 
     #currentyear::before {
@@ -50,6 +61,10 @@
 
     figcaption {
         text-align: center;
+    }
+
+    #lastModified {
+        font-size: 1rem;
     }
 
 }

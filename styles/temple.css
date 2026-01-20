@@ -20,11 +20,14 @@ footer {
 
 span {
     font-weight: bold;
+    font-size: 1.8rem;
 }
 
 header {
     background-color: blueviolet;
     padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px #333;
 }
 
 /* Stack nav items vertically on small screens */
@@ -41,7 +44,6 @@ nav li {
     display: none;
 }
 
-span,
 nav li a {
     font-size: 1.5rem;
     text-align: center;
@@ -49,10 +51,17 @@ nav li a {
     text-decoration: none;
 }
 
+.active {
+    color: yellow;
+}
+
 nav li a:hover {
-    color: black;
-    background-color: #e0e0e0;
     border-radius: 10px;
+    letter-spacing: 0.2rem;
+    text-decoration: 1px underline double red;
+    background-color: #eee;
+    color: #000;
+
 }
 
 footer,
