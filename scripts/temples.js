@@ -6,7 +6,7 @@ const lastModified = document.getElementById("lastModified");
 
 // modify element 
 const year = new Date().getFullYear();
-currentYear.textContent = `${year} 🕰️ Enssah Fayia Momoh🌲Liberia`;
+currentYear.textContent = `@ ${year} 🕰️ Enssah Fayia Momoh🌲Liberia`;
 const modified = document.lastModified;
 lastModified.textContent = `Last Modified: ${modified}`;
 
