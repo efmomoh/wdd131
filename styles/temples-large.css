@@ -39,10 +39,6 @@
         line-height: 2rem;
     }
 
-    #currentyear::after {
-        content: "❤️🏳️💙";
-    }
-
     #menu {
         display: none;
     }
