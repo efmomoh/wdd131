@@ -15,7 +15,7 @@
 
     nav {
         text-decoration: underline double;
-            background-color: black;
+            background-color: var(--black);
             padding: 1rem;
     }
 
@@ -37,7 +37,7 @@
 
     img {
         max-width: 220px;
-        height: 200;
+        height: 200px;
     }
 
     footer {
