@@ -21,7 +21,7 @@
     main {
         max-width: 800px;
         margin: 0 auto;
-        padding: 6rem 2rem;
+        padding-top: 6rem;
     }
 
     /* 3-column grid for larger screens */
