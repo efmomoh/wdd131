@@ -69,7 +69,6 @@ nav li a {
 nav li a:hover {
     border-radius: 10px;
     letter-spacing: 0.2rem;
-    text-decoration: 1px underline double var(--red);
     background-color: var(--white);
     color: #000;
 
@@ -128,7 +127,7 @@ footer {
 
 /* menu  */
 #menu {
-    font-size: 3rem;
+    font-size: 2rem;
     background: none;
     border: none;
     color: var(--white);
@@ -142,7 +141,7 @@ footer {
 }
 
 #menu.open::before {
-    content: "❌";
+    content: "X";
 }
 
 .open li {
