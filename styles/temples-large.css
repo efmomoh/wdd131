@@ -46,10 +46,6 @@
         bottom: 0;
     }
 
-    #currentyear::before {
-        content: "@";
-    }
-
     #currentyear::after {
         content: "❤️🏳️💙";
     }
