@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     height: auto;
 }
 
@@ -28,13 +28,13 @@ footer {
 
 span {
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 
 header {
     background-color: var(--purple);
     padding: 1rem;
-    box-shadow: 0 8px 30px var(--mooron);
+    box-shadow: 0 5px 30px var(--mooron);
     color: var(--white);
 }
 
@@ -79,7 +79,7 @@ header nav li {
 }
 
 main {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 h1 {
@@ -91,10 +91,10 @@ h1 {
 /* Single-column layout for small screens */
 section {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
     background-color: var(--white);
-    padding: 1rem;
+    padding: 1.5rem 0;
     justify-items: center;
     align-items: center;
 }
@@ -102,13 +102,14 @@ section {
 figcaption {
     color: var(--purple);
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: .5rem;
 }
 
 img {
-    width: 330px;
+    width: 200px;
     height: 200px;
+    object-fit: cover;
 }
 
 footer {
@@ -118,8 +119,9 @@ footer {
 
 #currentyear,
 #lastModified {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 1rem;
+    line-height: 2.5rem;
 }
 
 /* menu  */

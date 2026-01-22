@@ -17,21 +17,27 @@
         display: block;
     }
 
+    h1, span {
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+    }
 
     main {
         max-width: 800px;
         margin: 0 auto;
-        padding-top: 6rem;
+        padding-top: 7rem;
     }
 
     /* 3-column grid for larger screens */
     section {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     img {
-        max-width: 220px;
+        max-width: 200px;
         height: 200px;
+        object-fit: cover;
     }
 
     footer {
