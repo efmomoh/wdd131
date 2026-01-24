@@ -56,7 +56,7 @@ countryContainer.append(dataTitle, createListFromObject(liberia));
 const weatherContainer = document.getElementById("weather-info");
 
 const weatherIcon = document.createElement("img");
-weatherIcon.src = "/images/places/icons/sleet.svg";
+weatherIcon.src = "../images/places/icons/sleet.svg";
 weatherIcon.alt = "Weather icon";
 weatherIcon.className = "weather-icon";
 
