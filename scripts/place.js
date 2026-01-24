@@ -111,8 +111,8 @@ const liberiaFlagPicture = {
     alt: "Flag of Liberia",
     className: "small-flag",
     sources: [
-        { media: "(min-width: 1024px)", srcset: "../images/places/large-flag.webp" },
-        { media: "(min-width: 768px)", srcset: "../images/places/medium-liberia-flag.webp" }
+        { media: "(min-width: 1024px)", srcset: "../images/places/large-liberia-flag.webp" },
+        { media: "(min-width: 768px)", srcset: "../images/places/lmedium-liberia-flag.webp" }
     ],
     img: {
         src: "../images/places/small-liberia-flag.webp",
