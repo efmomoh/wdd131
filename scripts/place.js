@@ -22,13 +22,13 @@ const liberia = {
     currency: "Liberian Dollar (LRD)",
     timeZone: "UTC +0 (GMT)",
     callingCode: "+231",
-    internet_TLD: ".lr"
+    internetTLD: ".lr"
 };
 
 // ---------- Helpers to convert lower case to Cap of each key in the object ----------
 function toTitleCase(str) {
     return str
-        .replace(/_([A-Z])/g, " $1")
+        .replace(/([A-Z])/g, " $1")
         .split(" ")
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(" ");
