@@ -2,12 +2,6 @@
     --liberia-blue: #002868;
     --liberia-red: #BF0A30;
     --liberia-white: #FFFFFF;
-
-    --color-bg: var(--liberia-white);
-    --color-text: var(--liberia-blue);
-    --color-header-bg: var(--liberia-blue);
-    --color-header-text: var(--liberia-white);
-    --color-accent: var(--liberia-red);
 }
 
 * {
@@ -18,24 +12,20 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: var(--color-bg);
-    color: var(--color-text);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-header {
-    border-bottom: 25px solid var(--color-accent);
-}
-
 header,
 footer {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-header-bg);
-    color: var(--color-header-text);
+    background: var(--liberia-blue);
+    color: white;
     text-align: center;
+}
+
+header {
+    border-bottom: 25px solid var(--liberia-red);
 }
 
 main {
@@ -45,26 +35,29 @@ main {
 
 .info-grid {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
 section {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
 }
 
 h1 {
-    padding: 0.5rem;
-}
-
-h2 {
-    text-align: center;
     padding: 1rem;
 }
+h2 {
+    text-align: center;
+    padding: .9rem;
+}
 
-ul {
-    padding: 0;
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--liberia-red);
+    margin: 0 auto;
 }
 
 ul li {
@@ -75,48 +68,40 @@ ul li {
     padding: 0.25rem 0;
 }
 
-ul li strong {
+strong {
     justify-self: end;
-}
-
-ul li span {
-    justify-self: start;
 }
 
 .weather-icon {
     width: 48px;
+    margin: 0 auto;
     height: auto;
     display: block;
-    margin: 0 auto 0.25rem;
 }
 
-#picture-container img {
-    width: 100%;
-    height: auto;
-}
-
-/* ===== WIDE SCREEN ONLY ===== */
+/* ===== WIDE SCREENS ===== */
 @media (min-width: 1024px) {
-
     h2 {
-        color: var(--color-header-text);
-        background-color: var(--color-accent);
+        color: var(--liberia-white);
+        background-color: var(--liberia-blue);
         margin-left: -1.8rem;
         text-align: start;
+        padding: .9rem;
     }
 
-    header {
-        padding: .5rem;
+    h2::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: var(--liberia-red);
+        margin: 0;
     }
 
     #picture-container {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
+        inset: 0;
         z-index: -1;
-        overflow: hidden;
     }
 
     #picture-container img {
@@ -125,42 +110,31 @@ ul li span {
         object-fit: cover;
     }
 
-    /* Smaller containers */
-    #country-info,
-    #weather-info {
-        max-width: 260px;
-        padding: 1rem;
-    }
-
-    /* Position sections */
     #country-info {
         position: fixed;
         top: 6.5rem;
         left: 2rem;
+        max-width: 260px;
+        padding: .8rem;
     }
 
     #weather-info {
         position: fixed;
-        bottom: 4.5rem;
-        right: 2rem;
+        bottom: 5rem;
+        right: 1rem;
+        max-width: 260px;
+        padding: .8rem;
     }
 
     .weather-icon {
         position: absolute;
-        right: 2rem;
-        top: 1.5rem;
-        width: 40px;
-
-    }
-
-    .info-grid {
-        display: block;
+        top: 1.4rem;
+        right: 2.5rem;
     }
 }
 
-/* ===== Footer ===== */
 footer {
     margin-top: auto;
+    padding: 0.5rem;
     line-height: 1.5rem;
-    padding: .5rem;
 }

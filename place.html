@@ -4,38 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liberia</title>
+    <title>Liberia - Place</title>
+
     <meta name="author" content="Enssah Fayia Momoh">
-    <meta name="description"
-        content="Welcome to Liberia climate and weather informative page that gives you the best data from an API source.">
-    <link rel="stylesheet" href="./styles/place.css">
+    <meta name="description" content="Climate, geography, and weather information for Liberia.">
+
+    <link rel="stylesheet" href="styles/place.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <script src="./scripts/place.js" defer></script>
+
+    <script src="scripts/place.js" defer></script>
 </head>
 
 <body>
     <!-- header  -->
     <header>
-        <h1 class="country">Liberia</h1>
+        <h1>Liberia</h1>
     </header>
 
-    <!-- main  -->
     <main>
-        <section id="picture-container"></section>
-        
-        <section class="info-grid">
-            <section id="country-info"></section>
-            <section id="weather-info"></section>
+
+        <!-- static image  -->
+        <section id="picture-container">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/places/large-liberia-flag.webp">
+                <source media="(min-width: 768px)" srcset="images/places/medium-liberia-flag.webp">
+                <img src="images/places/small-liberia-flag.webp" alt="Flag of Liberia" loading="lazy">
+            </picture>
         </section>
+
+        <section class="info-grid">
+
+            <section id="country-info">
+                <h2>Data</h2>
+            </section>
+
+            <section id="weather-info">
+                <h2>Weather</h2>
+
+                <!-- weather icon  -->
+                <img src="images/places/icons/sleet.svg" alt="Weather icon" class="weather-icon">
+            </section>
+
+        </section>
+
     </main>
 
     <!-- footer  -->
     <footer>
-        <span id="currentYear"></span>
+        <span id="currentYear"></span> <br>
         <span id="lastModified"></span>
     </footer>
+
 </body>
 
 </html>
