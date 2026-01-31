@@ -51,18 +51,17 @@ h1 {
     padding: 1rem;
 }
 
-h2 {
+h2,
+h3 {
     text-align: center;
-    padding: .9rem;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: var(--liberia-red);
+    padding-bottom: 10px;
 }
 
-h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: var(--liberia-red);
-    margin: 0 auto;
+ul {
+    margin-top: 0.5rem;
 }
 
 ul li {
@@ -82,6 +81,7 @@ strong {
     height: auto;
     display: block;
     margin: 0 auto 0.25rem;
+    margin-top: .5rem;
 }
 
 #picture-container img {
@@ -91,21 +91,22 @@ strong {
 
 /* ===== WIDE SCREENS ===== */
 @media (min-width: 1024px) {
-    h2 {
+
+    h2,
+    h3 {
         color: var(--liberia-white);
         background-color: var(--liberia-blue);
-        margin-left: -1.8rem;
+        margin-left: -1.5rem;
         text-align: start;
         padding: .9rem;
     }
 
-    h2::after {
-        content: "";
+    h3::after {
+        content: "🌦️";
         display: block;
-        width: 60px;
-        height: 3px;
-        background: var(--liberia-red);
-        margin: 0;
+        margin: -1rem auto;
+        float: right;
+        font-size: 2.5rem;
     }
 
     #picture-container {
@@ -144,9 +145,7 @@ strong {
     }
 
     .weather-icon {
-        position: absolute;
-        top: 1.4rem;
-        right: 2.5rem;
+        display: none;
     }
 
     .info-grid {
