@@ -1,20 +1,30 @@
 /* temple.css */
 /* Mobile-first (small screens) */
+
 :root {
-    --purple: #8a2be2;
-    --black: #000000;
-    --white: #ffffff;
-    --yellow: #ffff00;
-    --red: #ff0000;
-    --mooron: #333333;
-    --darkblue: #003366;
-    --gray: #808080;
-    --darkgray: #a9a9a9;
-    --card-bg-color: #f9f9f9;
+    /* Primary colors */
+    --purple: blueviolet;
+    --black: black;
+    --white: white;
+    --yellow: yellow;
+    --red: red;
+
+    /* Grays */
+    --mooron: darkslategray;
+    --darkblue: darkblue;
+    --gray: gray;
+    --darkgray: darkgray;
+
+    /* Card and text */
+    --card-bg-color: whitesmoke;
     --key-color: var(--darkblue);
-    --value-color: #333333;
+    --value-color: var(--mooron);
+
+    /* Body background */
+    --body-bg: white;
 }
 
+/* ==================== Reset ==================== */
 * {
     margin: 0;
     padding: 0;
@@ -23,17 +33,16 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    height: auto;
+    background-color: var(--body-bg);
 }
 
-/* Header, Main, Footer */
+/* ==================== Header, Main, Footer ==================== */
 header,
 main,
 footer {
     width: 100%;
 }
 
-/* Bold span text */
 span {
     font-weight: bold;
     font-size: 1.2rem;
@@ -81,13 +90,20 @@ nav li a:hover {
 }
 
 /* Footer styling */
-footer,
-header span,
-header nav a,
-header nav li {
+footer {
+    background-color: var(--purple);
+    text-align: center;
     color: var(--white);
 }
 
+#currentyear,
+#lastModified {
+    font-size: 1.2rem;
+    padding: 1rem;
+    line-height: 2.5rem;
+}
+
+/* ==================== Main ==================== */
 main {
     padding: 2rem 0.5rem;
 }
@@ -98,14 +114,14 @@ h1 {
     text-align: center;
 }
 
-/* Temples container grid */
+/* ==================== Temples Container ==================== */
 #temples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
-    background-color: var(--white);
     justify-items: center;
     align-items: center;
+    background-color: var(--white);
 }
 
 /* Temple card styling */
@@ -114,6 +130,7 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 10px var(--gray);
     padding: 1rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,19 +180,6 @@ img {
     border-radius: 8px;
 }
 
-/* Footer */
-footer {
-    background-color: var(--purple);
-    text-align: center;
-}
-
-#currentyear,
-#lastModified {
-    font-size: 1.2rem;
-    padding: 1rem;
-    line-height: 2.5rem;
-}
-
 /* Menu button */
 #menu {
     font-size: 2rem;
@@ -199,10 +203,10 @@ footer {
     display: block;
 }
 
-/* Responsive for mobile */
+/* ==================== Responsive ==================== */
 @media (max-width: 500px) {
     #temples {
         grid-template-columns: 1fr;
-        /* stack cards */
+        /* stack cards on mobile */
     }
 }
