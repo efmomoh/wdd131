@@ -1,0 +1,71 @@
+/* Larger screens (tablets, laptops, desktops) */
+
+@media (min-width: 600px) {
+
+    /* Nav goes horizontal */
+    header {
+        position: fixed;
+    }
+
+    header,
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    h1,
+    span {
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 7rem;
+    }
+
+    #temples {
+        margin-top: 2rem;
+    }
+
+    /* 3-column grid for larger screens */
+    section {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* padding-top: 1rem; */
+    }
+
+    ul li {
+        font-size: 0.5rem;
+        justify-items: center;
+    }
+
+    img {
+        max-width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    footer {
+        padding: .8rem;
+        line-height: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #lastModified {
+        font-size: 1rem;
+    }
+
+}
