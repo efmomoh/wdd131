@@ -1,0 +1,189 @@
+/* temple.css */
+/* Mobile-first (small screens) */
+:root {
+    --purple: #8a2be2;
+    --black: #000000;
+    --white: #ffffff;
+    --yellow: #ffff00;
+    --red: #ff0000;
+    --mooron: #333;
+    --darkblue: #003366;
+    --gray: gray;
+    --darkgray: darkgray;
+    --card-bg-color: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: auto;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header {
+    background-color: var(--purple);
+    padding: 1rem;
+    box-shadow: 0 5px 30px var(--mooron);
+    color: var(--white);
+}
+
+/* Stack nav items vertically on small screens */
+header,
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+}
+
+nav li {
+    display: none;
+}
+
+nav li a {
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.active {
+    color: var(--yellow);
+}
+
+nav li a:hover {
+    border-radius: 10px;
+    letter-spacing: 0.2rem;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+footer,
+header span,
+header nav a,
+header nav li {
+    color: var(--white);
+}
+
+main {
+    padding: 2rem 0.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Single-column layout for small screens */
+#temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    background-color: var(--white);
+    justify-items: center;
+    align-items: center;
+}
+
+section {
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--gray);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 8px 20px var(--darkgray);
+    transform: translateY(-5px);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.key {
+    font-size: 0.8rem;
+    color: var(--darkblue);
+}
+
+.value {
+    font-size: 0.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 0.5rem;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 0.5rem;
+    text-align: center;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--purple);
+    text-align: center;
+}
+
+#currentyear,
+#lastModified {
+    font-size: 1.2rem;
+    padding: 1rem;
+    line-height: 2.5rem;
+}
+
+/* menu  */
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.open li {
+    display: block;
+}
