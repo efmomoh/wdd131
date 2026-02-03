@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+img {
+    width: 100%;
+    background-color: #000;
+    animation: fade 15s;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 0.5rem;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
