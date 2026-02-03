@@ -187,3 +187,10 @@ footer {
 .open li {
     display: block;
 }
+
+@media (max-width: 500px) {
+    #temples {
+        grid-template-columns: 1fr;
+        /* stack cards on mobile */
+    }
+}
