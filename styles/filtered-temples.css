@@ -6,11 +6,13 @@
     --white: #ffffff;
     --yellow: #ffff00;
     --red: #ff0000;
-    --mooron: #333;
+    --mooron: #333333;
     --darkblue: #003366;
-    --gray: gray;
-    --darkgray: darkgray;
+    --gray: #808080;
+    --darkgray: #a9a9a9;
     --card-bg-color: #f9f9f9;
+    --key-color: var(--darkblue);
+    --value-color: #333333;
 }
 
 * {
@@ -24,17 +26,20 @@ body {
     height: auto;
 }
 
+/* Header, Main, Footer */
 header,
 main,
 footer {
     width: 100%;
 }
 
+/* Bold span text */
 span {
     font-weight: bold;
     font-size: 1.2rem;
 }
 
+/* Header styling */
 header {
     background-color: var(--purple);
     padding: 1rem;
@@ -75,6 +80,7 @@ nav li a:hover {
     color: var(--black);
 }
 
+/* Footer styling */
 footer,
 header span,
 header nav a,
@@ -92,7 +98,7 @@ h1 {
     text-align: center;
 }
 
-/* Single-column layout for small screens */
+/* Temples container grid */
 #temples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -102,6 +108,7 @@ h1 {
     align-items: center;
 }
 
+/* Temple card styling */
 section {
     background-color: var(--card-bg-color);
     border-radius: 12px;
@@ -123,15 +130,18 @@ h2 {
     font-size: 1.2rem;
 }
 
+/* Key/value styling */
 .key {
     font-size: 0.9rem;
-    color: var(--darkblue);
+    color: var(--key-color);
 }
 
 .value {
     font-size: 0.8rem;
+    color: var(--value-color);
 }
 
+/* Temple list styling */
 ul {
     display: flex;
     flex-direction: column;
@@ -143,9 +153,9 @@ ul li {
     list-style-type: none;
     font-size: 0.5rem;
     text-align: center;
-
 }
 
+/* Images */
 img {
     max-width: 100%;
     height: auto;
@@ -153,6 +163,7 @@ img {
     border-radius: 8px;
 }
 
+/* Footer */
 footer {
     background-color: var(--purple);
     text-align: center;
@@ -165,7 +176,7 @@ footer {
     line-height: 2.5rem;
 }
 
-/* menu  */
+/* Menu button */
 #menu {
     font-size: 2rem;
     background: none;
@@ -188,9 +199,10 @@ footer {
     display: block;
 }
 
+/* Responsive for mobile */
 @media (max-width: 500px) {
     #temples {
         grid-template-columns: 1fr;
-        /* stack cards on mobile */
+        /* stack cards */
     }
 }
