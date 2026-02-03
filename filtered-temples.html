@@ -1,0 +1,54 @@
+<!-- temple picture album page  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description"
+        content="Explore a responsive DOM-based picture album featuring temple images that adapt seamlessly to mobile and desktop screens.">
+    <meta name="author" content="Enssah Fayia Momoh">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-large-temples.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <!-- header  -->
+
+    <header>
+        <span>Temple Album</span>
+        <button type="button" id="menu" aria-label="Open and Close"></button>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="old.html">Old</a></li>
+                <li><a href="new.html">New</a></li>
+                <li><a href="large.html">Large</a></li>
+                <li><a href="small.html">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main  -->
+    <main>
+        <h1>Home</h1>
+        <section id="temples">
+
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
