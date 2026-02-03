@@ -1,0 +1,78 @@
+/* CSS table  */
+
+:root {
+    --header-color: #000;
+    --subheader-color: #938f8f;
+    --feature-2-color: #eee;
+    --text-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin: 20px auto;
+}
+
+table {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-collapse: collapse;
+
+}
+
+caption {
+    font-size: smaller;
+    padding: 0.5rem;
+    caption-side: bottom;
+}
+
+
+
+thead tr th {
+    text-align: center;
+    padding: 1rem;
+}
+
+th {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+td {
+    text-align: center;
+}
+
+thead tr:first-child {
+    background-color: var(--header-color);
+    color: var(--text-color);
+}
+
+
+
+thead tr:nth-last-child(1) {
+    background-color: var(--subheader-color);
+    color: var(--text-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--feature-2-color);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--text-color);
+}
+
+tfoot td {
+    text-align: end;
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+
+.blank {
+    background-color: var(--header-color);
+}
