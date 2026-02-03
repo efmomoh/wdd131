@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Methods</title>
+    <link rel="stylesheet" href="/week04/styles/js-methods.css">
+    <script src="/week04/scripts/js-methods.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>JavaScript Array Methods</h1>
+        <div class="linkback">📑 <a href="https://codepen.io/BYU-Idaho/pen/EaxworK" target="_blank">Exercise Link</a>
+        </div>
+        <nav>
+            <span><a href="#map">map()</a></span>
+            <span><a href="#filter">filter()</a></span>
+            <span><a href="#reduce">reduce()</a></span>
+            <span><a href="#forEach">forEach()</a></span>
+            <span><a href="#find">find()</a></span>
+            <span><a href="#indexOf">indexOf()</a></span>
+        </nav>
+        <hr>
+        <p><em>View the solution to each exercise in the JS panel.</em></p>
+        <hr>
+        <section>
+            <h2 id="map">map()</h2>
+            <h3>Exercise 1️⃣</h3>
+            <p>Using map(), process the given <strong>courses</strong> array to display just the course subjects (CSE,
+                WDD)
+                as list items <strong>&lt;li&gt;</strong> in the given unordered list with an <strong>id</strong> of
+                <strong>subjects</strong>.
+            </p>
+            <div class="output">
+                Subject List
+                <ul id="subjects"></ul>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2 id="filter">filter()</h2>
+            <h3>Exercise 2️⃣</h3>
+            <p>Using filter(), process the given <strong>countries</strong> array to display only those countries that
+                start
+                with the letter "U" as list items <strong>&lt;li&gt;</strong> in the given unordered list with an
+                <strong>id</strong> of <strong>u</strong>.
+            </p>
+            <div class="output">
+                Filterd Countries List
+                <ul id="u"></ul>
+            </div>
+        </section>
+
+        <hr>
+        <section>
+            <h2 id="reduce">reduce()</h2>
+            <h3>Exercise 3️⃣</h3>
+            <p>An array of <strong>fruits</strong> objects each with a <strong>name</strong> and <strong>price</strong>
+                is
+                provided. Each fruit has a different price. Calculate the total cost of all the fruits using
+                <strong>reduce()</strong> and display it in the <strong>&lt;div&gt;</strong> with an <strong>id</strong>
+                of
+                <strong>total</strong>.
+            </p>
+            <div class="output">
+                Reduce to total fruit cost
+                <div id="total"></div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2 id="forEach">forEach()</h2>
+            <h3>Exercise 4️⃣</h3>
+            <div class="output">
+                Student List
+                <ul id="studentList"></ul>
+            </div>
+        </section>
+
+        <hr>
+        <section>
+            <h2 id="find">find()</h2>
+            <h3>Exercise 5️⃣</h3>
+            <p>Using <strong>find()</strong>, retrieve the first product from the given <strong>products</strong> array
+                where the price is greater than 20, and display its name inside the <strong>&lt;p&gt;</strong> with an
+                <strong>id</strong> of <strong>product</strong>.
+            </p>
+            <div class="output">
+                1st Product Price > 20
+                <p id="product"></p>
+            </div>
+        </section>
+
+        <hr>
+        <section>
+            <h2 id="indexOf">indexOf()</h2>
+            <h3>Exercise 6️⃣</h3>
+            <p>Using indexOf(), find the position of "Canada" 🍁 in the given <strong>countries</strong> array and
+                display
+                the index inside the <strong>&lt;p&gt;</strong> with an <strong>id</strong> of <strong>output</strong>.
+                If
+                Canada is not found in the array, indicate that it was not found. Try to use a ternary operator.</p>
+            <div class="output">
+                Canada Index
+                <p id="output"></p>
+            </div>
+        </section>
+        <p></p>
+    </main>
+</body>
+
+</html>
