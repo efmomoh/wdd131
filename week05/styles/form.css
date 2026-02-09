@@ -1,22 +1,13 @@
 :root {
     --primary: darkgreen;
-    /* #0b3d2e */
     --primary-light: seagreen;
-    /* #145a42 */
     --background: whitesmoke;
-    /* #f4f4f4 */
     --white: white;
-    /* #ffffff */
     --text: black;
-    /* #222222 */
     --text-muted: dimgray;
-    /* #555555 */
     --border: lightgray;
-    /* #cccccc */
     --shadow: gray;
-    /* simulate soft shadow */
     --focus-ring: lightgreen;
-    /* simulate focus ring */
 }
 
 /* RESET */
@@ -50,7 +41,6 @@ main {
     background: var(--white);
     padding: 22px;
     border-radius: 8px;
-    /* simulate soft shadow using gray */
     box-shadow: 0 4px 12px var(--shadow);
 }
 
@@ -82,7 +72,6 @@ select:focus,
 textarea:focus {
     outline: none;
     border-color: var(--primary);
-    /* simulate focus ring with named color */
     box-shadow: 0 0 0 2px var(--focus-ring);
 }
 
