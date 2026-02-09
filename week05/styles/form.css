@@ -64,6 +64,7 @@ textarea {
     border-radius: 5px;
     font-size: 0.95rem;
     transition: border 0.2s, box-shadow 0.2s;
+    appearance: none;
 }
 
 /* FOCUS EFFECT */
