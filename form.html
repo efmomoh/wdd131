@@ -4,83 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Product Review Form</title>
-    <meta name="description" content="Product review form page">
+
+    <meta name="description"
+        content="Submit a detailed product review including rating, installation date, useful features, and written feedback to help others evaluate product performance.">
     <meta name="author" content="Enssah Fayia Momoh">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="./week05/styles/form.css">
-
-    <!-- JS -->
     <script src="./week05/scripts/form.js" defer></script>
-
 </head>
 
 <body>
 
-    <header class="site-header">
+    <header>
         <h1>Product Review</h1>
     </header>
 
     <main>
-        <form id="reviewForm" action="review.html" method="get" class="form-1">
 
-            <!-- Product -->
-            <fieldset>
-                <legend>Product Name</legend>
-                <div class="custom-select" id="customSelect" role="listbox" aria-labelledby="product-label">
-                    <div class="select-selected" tabindex="0">Select a Product ▾</div>
-                    <div class="select-items select-hide" id="productList">
-                        <!-- JS will insert products here -->
-                    </div>
-                    <input type="hidden" name="product" id="productValue" required>
-                </div>
-                <div class="field-error" id="productError">Please select a product</div>
-            </fieldset>
+        <form id="reviewForm" action="./week05/review.html" method="get">
 
+            <!-- PRODUCT -->
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
 
-            <!-- Rating -->
+            <!-- RATING -->
             <fieldset>
                 <legend>Overall Rating</legend>
-                <label class="general-label" for="star">Rate (1 to 5 Stars)</label>
-                <label><input type="radio" name="rating" id="star" value="1" required> ★</label>
-                <label><input type="radio" name="rating" id="star" value="2"> ★★</label>
-                <label><input type="radio" name="rating" id="star" value="3"> ★★★</label>
-                <label><input type="radio" name="rating" id="star" value="4"> ★★★★</label>
-                <label><input type="radio" name="rating" id="star" value="5"> ★★★★★</label>
+
+                <label for="r1"><input type="radio" id="r1" name="rating" value="1" required> ☆</label>
+                <label for="r2"><input type="radio" id="r2" name="rating" value="2"> ☆☆</label>
+                <label for="r3"><input type="radio" id="r3" name="rating" value="3"> ☆☆☆</label>
+                <label for="r4"><input type="radio" id="r4" name="rating" value="4"> ☆☆☆☆</label>
+                <label for="r5"><input type="radio" id="r5" name="rating" value="5"> ☆☆☆☆☆</label>
             </fieldset>
 
-            <!-- Date -->
+            <!-- DATE -->
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- FEATURES -->
             <fieldset>
-                <legend><label for="date">Date of Installation</label></legend>
-                <input type="date" name="installation" id="date" required>
+                <legend>Useful Features (Check all that apply)</legend>
+
+                <label for="f1"><input type="checkbox" id="f1" name="features" value="durability"> Durability</label>
+                <label for="f2"><input type="checkbox" id="f2" name="features" value="ease-of-use"> Ease of Use</label>
+                <label for="f3"><input type="checkbox" id="f3" name="features" value="performance"> Performance</label>
+                <label for="f4"><input type="checkbox" id="f4" name="features" value="design"> Design</label>
             </fieldset>
 
-            <!-- Features -->
-            <fieldset>
-                <legend><label for="box">Useful Features <em>(Check all that apply)</em></label></legend>
-                <label><input type="checkbox" name="features" id="box" value="durability"> Durability</label>
-                <label><input type="checkbox" name="features" id="box" value="ease-of-use"> Ease of Use</label>
-                <label><input type="checkbox" name="features" id="box" value="performance"> Performance</label>
-                <label><input type="checkbox" name="features" id="box" value="design"> Design</label>
-            </fieldset>
+            <!-- REVIEW -->
+            <label for="review">Written Review <em>(Optional)</em></label>
+            <textarea id="review" name="review" placeholder="Write your message here..."></textarea>
 
-            <!-- Review -->
-            <fieldset>
-                <legend><label for="message">Written Review <em>(Optional)</em></label></legend>
-                <textarea name="review" rows="4" id="message" placeholder="Please type your message here."></textarea>
-            </fieldset>
+            <!-- USER NAME -->
+            <label for="fullname">Full Name <em>(Optional)</em></label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name here...">
 
-            <!-- Name -->
-            <label for="name">Your Name <em>(Optional)</em></label>
-            <input type="text" name="fname" id="name" placeholder="Enter your name here." autocomplete="off">
-
-            <input type="submit" value="Post Review">
+            <input type="submit" value="Submit Review">
 
         </form>
     </main>
