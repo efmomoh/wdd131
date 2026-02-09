@@ -121,7 +121,7 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     font-weight: bold;
-    transition: background 0.2s, transform 0.1s;
+    transition: transform 0.1s;
 }
 
 input[type="submit"]:hover {
@@ -139,7 +139,7 @@ input[type="submit"]:hover {
     background: var(--reset-btn-bg);
     color: var(--reset-btn-color);
     cursor: pointer;
-    transition: background 0.2s;
+    transition: 0.2s;
 }
 
 .reset-btn:hover {
@@ -213,7 +213,7 @@ footer {
 }
 
 /* Responsive Media Queries */
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     main {
         padding: 18px;
     }
