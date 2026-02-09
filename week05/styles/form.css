@@ -1,0 +1,233 @@
+:root {
+    --header-bg: #0b3d2e;
+    --body-bg: #f4f4f4;
+    --text-color: #fff;
+    --text-color-dark: #222;
+    --main-shadow: #00000033;
+    --input-border: #ccc;
+    --fieldset-border: #ddd;
+    --input-hover-bg: #145a42;
+    --footer-color: #555;
+    --select-bg: #fff;
+    --select-border: #ccc;
+    --select-hover-bg: #f1f1f1;
+    --error-color: #ff4d4d;
+    --reset-btn-bg: #fff;
+    --reset-btn-border: #0b3d2e;
+    --reset-btn-color: #0b3d2e;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: var(--body-bg);
+    line-height: 1.5;
+    color: var(--text-color-dark);
+}
+
+/* Header */
+.site-header {
+    background: var(--header-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+/* Main */
+main {
+    max-width: 520px;
+    width: 90%;
+    margin: 30px auto;
+    background: var(--select-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px var(--main-shadow);
+}
+
+/* Labels */
+.form-1 label {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.95rem;
+}
+
+#product-label {
+    font-weight: bold;
+}
+
+/* Inputs, Selects, Textarea */
+.form-1 input[type="text"],
+.form-1 input[type="date"],
+.form-1 input[type="submit"],
+.form-1 select,
+.form-1 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    font-size: 0.95rem;
+    appearance: none;
+    transition: 0.2s;
+}
+
+.form-1 input[type="text"],
+.form-1 select {
+    height: 44px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Fieldsets */
+fieldset {
+    border: 1px solid var(--fieldset-border);
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+legend, .general-label {
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+.general-label {
+    margin-bottom: 0.25rem;
+}
+
+/* Radio & Checkbox */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+/* Submit button */
+input[type="submit"] {
+    margin-top: 18px;
+    background: var(--header-bg);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.1s;
+}
+
+input[type="submit"]:hover {
+    background: var(--input-hover-bg);
+    transform: translateY(-1px);
+}
+
+/* Reset Button */
+.reset-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 6px 12px;
+    border: 1px solid var(--reset-btn-border);
+    border-radius: 4px;
+    background: var(--reset-btn-bg);
+    color: var(--reset-btn-color);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.reset-btn:hover {
+    background: var(--select-hover-bg);
+}
+
+/* Custom Select */
+.custom-select {
+    position: relative;
+    width: 100%;
+    font-family: inherit;
+}
+
+.select-selected {
+    background: var(--select-bg);
+    border: 1px solid var(--select-border);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select-selected:focus {
+    outline: 2px solid var(--header-bg);
+    outline-offset: 2px;
+}
+
+.select-items {
+    position: absolute;
+    background: var(--select-bg);
+    border: 1px solid var(--select-border);
+    border-top: none;
+    width: 100%;
+    max-height: 220px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    z-index: 99;
+}
+
+.select-items div {
+    padding: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: var(--text-color-dark);
+}
+
+.select-items div:hover {
+    background: var(--select-hover-bg);
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-error {
+    border-color: var(--error-color);
+}
+
+.field-error {
+    color: var(--error-color);
+    font-size: 0.9rem;
+    margin-top: 4px;
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--footer-color);
+    font-size: 14px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 600px) {
+    main {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 10px;
+    }
+
+    .form-1 input[type="submit"] {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .reset-btn {
+        padding: 6px 10px;
+    }
+}
