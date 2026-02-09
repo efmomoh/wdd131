@@ -46,8 +46,12 @@ main {
 
 /* LABELS */
 label {
-    display: block;
     margin-top: 14px;
+}
+
+label,
+div {
+    display: block;
     font-weight: 600;
     font-size: 0.95rem;
 }
