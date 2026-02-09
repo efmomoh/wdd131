@@ -4,8 +4,10 @@
     --background: #f4f4f4;
     --white: #ffffff;
     --text: #222;
+    --text-muted: #555;
     --border: #cccccc;
     --shadow: rgba(0, 0, 0, 0.1);
+    --focus-ring: rgba(11, 61, 46, 0.15);
 }
 
 /* RESET */
@@ -70,7 +72,7 @@ select:focus,
 textarea:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 0 2px rgba(11, 61, 46, 0.15);
+    box-shadow: 0 0 0 2px var(--focus-ring);
 }
 
 /* TEXTAREA */
@@ -125,7 +127,7 @@ footer {
     text-align: center;
     margin: 18px 0;
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-muted);
 }
 
 /* =========================
