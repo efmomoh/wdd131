@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product review form page">
+    <meta name="author" content="Enssah Fayia Momoh">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/week05/styles/form.css">
+
+    <!-- JS -->
+    <script src="/week05/scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form id="reviewForm" action="review.html" method="get" class="form-1">
+
+            <!-- Product -->
+            <fieldset>
+                <legend>Products Category</legend>
+                <label class="product-label" for="productList">Product Name</label>
+                <div class="custom-select" id="customSelect" role="listbox" aria-labelledby="product-label">
+                    <div class="select-selected" tabindex="0">Select a Product ▾</div>
+                    <div class="select-items select-hide" id="productList">
+                        <!-- JS will insert products here -->
+                    </div>
+                    <input type="hidden" name="product" id="productValue" required>
+                </div>
+                <div class="field-error" id="productError">Please select a product</div>
+            </fieldset>
+
+
+            <!-- Rating -->
+            <fieldset>
+                <legend><label for="star">Overall Rating</label></legend>
+                <label><input type="radio" name="rating" id="star" value="1" required> ★</label>
+                <label><input type="radio" name="rating" id="star" value="2"> ★★</label>
+                <label><input type="radio" name="rating" id="star" value="3"> ★★★</label>
+                <label><input type="radio" name="rating" id="star" value="4"> ★★★★</label>
+                <label><input type="radio" name="rating" id="star" value="5"> ★★★★★</label>
+            </fieldset>
+
+            <!-- Date -->
+            <fieldset>
+                <legend><label for="date">Date of Installation</label></legend>
+                <input type="date" name="installation" id="date" required>
+            </fieldset>
+
+            <!-- Features -->
+            <fieldset>
+                <legend><label for="box">Useful Features <em>(Check all that apply)</em></label></legend>
+                <label><input type="checkbox" name="features" id="box" value="durability"> Durability</label>
+                <label><input type="checkbox" name="features" id="box" value="ease-of-use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" id="box" value="performance"> Performance</label>
+                <label><input type="checkbox" name="features" id="box" value="design"> Design</label>
+            </fieldset>
+
+            <!-- Review -->
+            <fieldset>
+                <legend><label for="message">Written Review <em>(Optional)</em></label></legend>
+                <textarea name="review" rows="4" id="message" placeholder="Please type your message here."></textarea>
+            </fieldset>
+
+            <!-- Name -->
+            <label for="name">Your Name <em>(Optional)</em></label>
+            <input type="text" name="fname" id="name" placeholder="Enter your name here.">
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p id="currentYear"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
