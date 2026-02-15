@@ -1,0 +1,161 @@
+/* ===== Base ===== */
+
+:root {
+    --text-color: white;
+    --bg-radiant: #2C3E50;
+    --bg2-radiant: #34495E;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, sans-serif;
+    background: linear-gradient(120deg, #fff, #eee);
+    color: var(--text-color);
+
+}
+
+/* ===== Hero ===== */
+.contact-hero {
+    text-align: center;
+    padding: 1rem 1rem 2rem;
+}
+
+.contact-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-hero p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.contact-hero {
+    color: var(--bg-radiant);
+}
+
+/* ===== Container ===== */
+.contact-container {
+    max-width: 650px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* ===== Form Card ===== */
+#contact-form {
+    background: white;
+    color: #2C3E50;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Input Group ===== */
+.input-group {
+    margin-bottom: 1.4rem;
+}
+
+/* Inputs */
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f8f9fa;
+    outline: none;
+    transition: border 0.25s, box-shadow 0.25s;
+}
+
+/* Placeholder Style */
+::placeholder {
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* Focus */
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #E67E22;
+    box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.15);
+}
+
+/* Error */
+.error {
+    display: block;
+    font-size: 0.8rem;
+    color: #e74c3c;
+    margin-top: 4px;
+}
+
+/* Character Counter */
+#counter {
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 3px;
+}
+
+/* ===== Button ===== */
+.send-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    background: #E67E22;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.send-btn:hover {
+    background: #d35400;
+    transform: translateY(-1px);
+}
+
+/* ===== Success Box ===== */
+#success-box {
+    margin-top: 2rem;
+    text-align: center;
+    background: white;
+    color: #2C3E50;
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 1.2rem;
+    }
+
+    #contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-hero h1 {
+        font-size: 1.6rem;
+    }
+}

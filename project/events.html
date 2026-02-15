@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Gallery</title>
+
+    <!-- styles  -->
+    <link rel="stylesheet" href="styles/roadside-lodge.css">
+    <link rel="stylesheet" href="styles/events.css">
+
+    <!-- script  -->
+    <script src="scripts/events.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <strong>Roadside Lodge</strong><br>
+            <small>Your Comfort Is Our Ultimate Desire</small>
+        </div>
+        <nav class="nav">
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="roadside-lodge.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="gallery">
+            <h1>Events & Gallery</h1>
+            <p>Explore past events, videos, and memorable moments</p>
+        </section>
+
+        <section class="events-container" id="eventsContainer"></section>
+
+        <!-- Media Modal with navigation -->
+        <div class="media-modal" id="mediaModal">
+            <span class="media-close" id="mediaClose">&times;</span>
+            <div class="media-nav">
+                <button id="prevMedia">&#10094;</button>
+                <button id="nextMedia">&#10095;</button>
+            </div>
+            <div class="media-content" id="mediaContent"></div>
+        </div>
+
+        <!-- Comment Modal -->
+        <div class="modal" id="commentModal">
+            <div class="modal-content">
+                <h3>Comments</h3>
+                <div id="commentsList"></div>
+                <input type="text" id="commentName" placeholder="Your Name">
+                <textarea id="commentText" placeholder="Write a comment..."></textarea>
+                <div class="modal-buttons">
+                    <button id="postComment">Post</button>
+                    <button id="closeModal">Close</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p id="company"></p>
+        <p id="copyright"></p>
+        <p class="privacy">
+            <a href="#">Privacy Policy</a> <br>
+            <a href="#">MIT Licensed</a>
+        </p>
+        <section class="socila-media">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

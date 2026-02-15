@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadside Lodge - Review</title>
+    <meta name="description" content="Information about Roadside Lodge: rooms, booking, events, and hospitality.">
+    <meta name="author" content="Enssah Fayia Momoh">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/roadside-lodge.css">
+    <link rel="stylesheet" href="styles/lodge-review.css">
+
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- SCRIPTS -->
+    <!-- <script src="scripts/roadside-lodge.js" defer></script> -->
+    <script src="scripts/lodge-reviews.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <strong>Roadside Lodge</strong><br>
+            <small>Your Comfort Is Our Ultimate Desire</small>
+        </div>
+        <nav class="nav">
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="roadside-lodge.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main section  -->
+    <main>
+        <section class="review-wrapper">
+
+            <section id="reviews">
+
+                <h3>Share Your Experience</h3>
+                <form id="review-form">
+                    <!-- Name -->
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                    <!-- Date -->
+                    <label for="visit-date">Date of Visit:</label>
+                    <input type="date" id="visit-date" name="date" required>
+
+                    <!-- Room / Visit Type -->
+                    <label for="room-type">Room / Visit Type:</label>
+                    <select id="room-type" name="room">
+                        <option value="standard">Standard</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="suite">Suite</option>
+                        <option value="family">Family Room</option>
+                    </select>
+
+                    <!-- Services Liked (Checkboxes) -->
+                    <fieldset>
+                        <legend>Services You Enjoyed:</legend>
+                        <label><input type="checkbox" name="services" value="Wi-Fi"> Free Wi-Fi</label>
+                        <label><input type="checkbox" name="services" value="Pool"> Swimming Pool</label>
+                        <label><input type="checkbox" name="services" value="Restaurant"> Restaurant</label>
+                        <label><input type="checkbox" name="services" value="Event"> Event Hosting</label>
+                        <label><input type="checkbox" name="services" value="Spa"> Spa & Wellness</label>
+                    </fieldset>
+
+                    <!-- Overall Satisfaction (Radio Buttons) -->
+                    <fieldset>
+                        <legend>Overall Satisfaction:</legend>
+                        <label><input type="radio" name="satisfaction" value="Excellent" required> Excellent</label>
+                        <label><input type="radio" name="satisfaction" value="Good"> Good</label>
+                        <label><input type="radio" name="satisfaction" value="Fair"> Fair</label>
+                        <label><input type="radio" name="satisfaction" value="Poor"> Poor</label>
+                    </fieldset>
+
+                    <!-- Star Rating -->
+                    <fieldset>
+                        <legend>Rate Your Stay:</legend>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5" required>
+                            <label for="star5" title="Excellent">★</label>
+
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" title="Very Good">★</label>
+
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" title="Good">★</label>
+
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" title="Fair">★</label>
+
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" title="Poor">★</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Message -->
+                    <label for="message">Your Feedback:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your review..."
+                        required></textarea>
+
+                    <button type="submit">Submit Review</button>
+                </form>
+
+                <!-- Display Reviews -->
+                <section id="display-reviews">
+                    <h4>Guest Reviews</h4>
+                    <div id="reviews-container"></div>
+                </section>
+            </section>
+
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p id="company"></p>
+        <p id="copyright"></p>
+    </footer>
+</body>
+
+</html>

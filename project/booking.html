@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Roadside Lodge</title>
+
+    <!-- styles  -->
+    <link rel="stylesheet" href="styles/roadside-lodge.css">
+    <link rel="stylesheet" href="styles/booking.css">
+
+    <!-- script  -->
+    <script src="scripts/booking.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <strong>Roadside Lodge</strong><br>
+            <small>Your Comfort Is Our Ultimate Desire</small>
+        </div>
+        <nav class="nav">
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="roadside-lodge.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="booking-container">
+        <h1>Complete Your Booking</h1>
+
+        <section id="room-info">
+            <!-- Selected room details will appear here -->
+        </section>
+
+        <form id="booking-form">
+            <div class="input-group">
+                <label for="checkin">Check-in Date *</label>
+                <input type="date" id="checkin" required>
+                <span class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="checkout">Check-out Date *</label>
+                <input type="date" id="checkout" required>
+                <span class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="guests">Number of Guests *</label>
+                <input type="number" id="guests" min="1" required>
+                <span class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" autocomplete="name" required>
+                <span class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" autocomplete="email" required>
+                <span class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" autocomplete="tel" required>
+                <span class="error"></span>
+            </div>
+
+            <input type="submit" value="Confirm Booking" class="send-btn">
+        </form>
+
+        <section id="success-box" class="hidden">
+            <h2>✔ Booking Confirmed!</h2>
+            <p>Your booking has been saved. <a href="booking-confirmation.html">View Confirmation</a></p>
+        </section>
+
+        <!-- REVIEW SECTION -->
+        <section id="review-section" class="hidden">
+            <h3>Rate Your Room</h3>
+            <p>Let us know how you liked your stay!</p>
+        
+            <form id="review-form">
+                <div class="rating">
+                    <input type="radio" name="rating" id="star5" value="5">
+                    <label for="star5" title="5 stars">★</label>
+                    <input type="radio" name="rating" id="star4" value="4">
+                    <label for="star4" title="4 stars">★</label>
+                    <input type="radio" name="rating" id="star3" value="3">
+                    <label for="star3" title="3 stars">★</label>
+                    <input type="radio" name="rating" id="star2" value="2">
+                    <label for="star2" title="2 stars">★</label>
+                    <input type="radio" name="rating" id="star1" value="1">
+                    <label for="star1" title="1 star">★</label>
+                </div>
+        
+                <section class="input-group">
+                    <label for="review-name">Your Name</label>
+                    <input type="text" id="review-name" placeholder="John Doe" required>
+                </section>
+        
+                <section class="input-group">
+                    <label for="review-message">Message</label>
+                    <textarea id="review-message" rows="3" placeholder="Write your review here..." required></textarea>
+                </section>
+        
+                <input type="submit" value="Submit Review" class="send-btn">
+            </form>
+        
+            <section id="review-success" class="hidden">
+                <h4>✔ Thank you for your feedback!</h4>
+                <p>Your review has been recorded.</p>
+            </section>
+        </section>
+
+        <!-- PREVIOUS REVIEWS -->
+        <section id="previous-reviews" class="hidden">
+            <h3>Previous Reviews</h3>
+            <div id="reviews-container">
+                <!-- Reviews will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p id="company"></p>
+        <p id="copyright"></p>
+        <p class="privacy">
+            <a href="#">Privacy Policy</a> <br>
+            <a href="#">MIT Licensed</a>
+        </p>
+        <section class="socila-media">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

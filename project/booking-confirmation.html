@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation | Roadside Lodge</title>
+    <meta name="description" content="Your confirmed booking details at Roadside Lodge.">
+    <meta name="author" content="Enssah Fayia Momoh">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/roadside-lodge.css">
+    <link rel="stylesheet" href="styles/booking.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- SCRIPTS -->
+    <script src="scripts/booking-confirmation.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <strong>Roadside Lodge</strong><br>
+            <small>Your Comfort Is Our Ultimate Desire</small>
+        </div>
+        <nav class="nav">
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="roadside-lodge.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="booking-container">
+        <section class="confirmation-hero">
+            <h1>Booking Confirmation</h1>
+            <p>Here are the details of your reservation at Roadside Lodge</p>
+        </section>
+
+        <section class="actions">
+            <a href="booking.html" class="send-btn">Book Another Room</a>
+            <a href="roadside-lodge.html" class="send-btn" style="background:#34495E;">Back to Home</a>
+        </section>
+
+        <section id="booking-details"></section>
+        
+        <section class="booking-container">
+            <h1>Print Booking Confirmation</h1>
+            <button id="print-btn" class="send-btn">Print / Save</button>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p id="company"></p>
+        <p id="copyright"></p>
+    </footer>
+</body>
+
+</html>
