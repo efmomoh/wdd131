@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             beds: 2,
             guests: 4,
             amenities: ["Free Wi-Fi", "Air Conditioning", "Balcony", "Mini Fridge"],
-            image: "images/efm.webp"
+            image: "/images/efm.webp"
         },
         {
             name: "Family Room",
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             beds: 3,
             guests: 5,
             amenities: ["Free Wi-Fi", "TV", "Living Area", "Kitchenette"],
-            image: "images/efm.webp"
+            image: "/images/efm.webp"
         },
         {
             name: "Single Room",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             beds: 1,
             guests: 1,
             amenities: ["Wi-Fi", "TV", "Desk"],
-            image: "images/efm.webp"
+            image: "/images/efm.webp"
         }
     ];
 

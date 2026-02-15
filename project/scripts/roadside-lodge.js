@@ -17,27 +17,27 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Welcome to Roadside Lodge",
             subtitle: "Your Comfort Is Our Ultimate Desire",
-            bg: "images/roadside-lodge.webp"
+            bg: "/images/roadside-lodge.webp"
         },
         {
             title: "Joseph B. Sakila",
             subtitle: "CEO • aka Joe Kissino",
-            bg: "images/ceo.webp"
+            bg: "/images/ceo.webp"
         },
         {
             title: "Patricia Sakila",
             subtitle: "Deputy CEO • aka Pat Kissino",
-            bg: "images/depceo.webp"
+            bg: "/images/depceo.webp"
         },
         {
             title: "The Official Launching Program",
             subtitle: "",
-            bg: "images/food.webp"
+            bg: "/images/food.webp"
         },
         {
             title: "Coming Soon...",
             subtitle: "Keep following us for updates",
-            bg: "images/hero-small.webp"
+            bg: "/images/hero-small.webp"
         }
     ];
 
@@ -175,19 +175,19 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Food, Drinks & Entertainment",
             description: "Entertainment center, live shows & quality food.",
-            image: "images/food.webp",
+            image: "/images/food.webp",
             slideIndex: 1
         },
         {
             title: "Community Cultural Festival",
             description: "Celebrating Liberian culture with music, dance, and food.",
-            image: "images/event-enssah.webp",
+            image: "/images/event-enssah.webp",
             slideIndex: 2
         },
         {
             title: "Weekend Lounge Nights",
             description: "Relax with drinks, music, and social vibes.",
-            image: "images/efm.webp",
+            image: "/images/efm.webp",
             slideIndex: 3
         }
     ];

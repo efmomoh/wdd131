@@ -28,7 +28,7 @@ const defaultEvents = [
     },
     {
         type: "image",
-        src: "images/efm.webp",
+        src: "/images/efm.webp",
         title: "Hotel Grand Opening",
         description: "Opening ceremony celebration.",
         date: "2025-11-02",
