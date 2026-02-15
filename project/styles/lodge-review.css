@@ -118,7 +118,7 @@ fieldset {
 #review-form button {
     margin-top: 15px;
     padding: 10px 20px;
-    background: var(--accent);
+    background: var(--primary);
     color: var(--text-color2);
     border: none;
     border-radius: 6px;
