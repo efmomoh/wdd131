@@ -1,5 +1,3 @@
-// home Js 
-
 document.addEventListener("DOMContentLoaded", () => {
     // ================= NAV MENU =================
     const toggle = document.querySelector('.menu-toggle');
@@ -14,8 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevBtn = document.querySelector(".hero-arrow.prev");
     const nextBtn = document.querySelector(".hero-arrow.next");
     const indicatorsContainer = document.querySelector(".hero-indicators");
-
-    // Hero slides on homepage 
 
     const heroSlides = [
         {
@@ -47,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let current = 0;
 
+    // ================= HERO INDICATORS =================
     const indicators = heroSlides.map((slide, idx) => {
         const btn = document.createElement("button");
         btn.setAttribute("role", "tab");
@@ -100,20 +97,23 @@ document.addEventListener("DOMContentLoaded", () => {
         resetAutoPlay();
     });
 
-
-    // ADD swipe support
+    // ================= HERO SWIPE SUPPORT =================
     let startX = 0;
+    hero.addEventListener("touchstart", e =>
+        startX = e.touches[0].clientX, {
+        passive: true
+    });
 
-    ["touchstart", "mousedown"].forEach(evt =>
-        hero.addEventListener(evt, e =>
-            startX = e.touches ? e.touches[0].clientX : e.clientX));
+    hero.addEventListener("touchend", e => {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide(), resetAutoPlay();
+    }, { passive: true });
 
-    ["touchend", "mouseup"].forEach(evt =>
-        hero.addEventListener(evt, e => {
-            const diff = startX - (e.changedTouches ? e.changedTouches[0].clientX : e.clientX);
-            if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide(),
-                resetAutoPlay();
-        }));
+    hero.addEventListener("mousedown", e => startX = e.clientX);
+    hero.addEventListener("mouseup", e => {
+        const diff = startX - e.clientX;
+        if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide(), resetAutoPlay();
+    });
 
     document.addEventListener("keydown", e => {
         if (e.key === "ArrowLeft") {
@@ -127,7 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     let autoPlay = setInterval(nextSlide, 5000);
-
     function resetAutoPlay() {
         clearInterval(autoPlay);
         autoPlay = setInterval(nextSlide, 5000);
@@ -135,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     showHeroSlide(current);
 
-    // adjust hero height dynamically
+    // ================= HERO HEIGHT =================
     function setHeroHeight() {
         if (window.innerWidth < 600)
             hero.style.height = '50vh';
@@ -143,10 +142,11 @@ document.addEventListener("DOMContentLoaded", () => {
             hero.style.height = '60vh';
         else hero.style.height = '70vh';
     }
+
     window.addEventListener('resize', setHeroHeight);
     setHeroHeight();
 
-    // FEATURES OBJECT
+    // ================= FEATURES GRID =================
     const featuresData = [
         "32 Bedrooms (Apartments)",
         "Two-Bedroom Apartments",
@@ -163,7 +163,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     const featuresContainer = document.querySelector(".features-grid");
-
     featuresData.forEach(item => {
         const card = document.createElement("div");
         card.className = "card";
@@ -171,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
         featuresContainer.appendChild(card);
     });
 
-    // EVENTS OBJECT
+    // ================= EVENTS =================
     const eventsData = [
         {
             title: "Food, Drinks & Entertainment",
@@ -194,17 +193,17 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     const eventsSection = document.querySelector(".events");
-
     eventsData.forEach(event => {
         const card = document.createElement("div");
         card.className = "event-card";
-        card.innerHTML = `<img src="${event.image}" alt="${event.title}" loading="lazy">
-                            <div class="event-content">
-                                <h3>${event.title}</h3>
-                                <p>${event.description}</p>
-                            </div>`;
+        card.innerHTML = `
+            <img src="${event.image}" alt="${event.title}" loading="lazy">
+            <div class="event-content">
+                <h3>${event.title}</h3>
+                <p>${event.description}</p>
+            </div>
+        `;
         eventsSection.appendChild(card);
-
         card.addEventListener("click", () => {
             current = event.slideIndex;
             showHeroSlide(current);
@@ -212,21 +211,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    //    ABOUT 
+    // ================= ABOUT =================
     const about = document.querySelector(".about");
-
     const h3 = document.createElement("h3");
     h3.className = "h3";
     h3.textContent = "About Roadside Lodge";
     about.appendChild(h3);
 
     const aboutPara = document.createElement("p");
-    aboutPara.innerHTML = `Roadside Lodge is a fully serviced guesthouse situated less than two miles from the main highway. 
-                            We provide a safe, relaxing, and enjoyable environment for travelers, families, and event guests.
-                            <a href="about.html">Learn More About Us...</a>`;
+    aboutPara.innerHTML = `
+        Roadside Lodge is a fully serviced guesthouse situated less than two miles from the main highway.
+        We provide a safe, relaxing, and enjoyable environment for travelers, families, and event guests.
+        <a href="about.html">Learn More About Us...</a>
+    `;
     about.appendChild(aboutPara);
 
-    //    FOOTER
+    // ================= FOOTER =================
     document.querySelector("#company").textContent = "Roadside Lodge ~ Your Comfort Is Our Ultimate Desire";
     document.querySelector("#copyright").textContent = `@ ${new Date().getFullYear()} Roadside Lodge. All Rights Reserved.`;
 });
