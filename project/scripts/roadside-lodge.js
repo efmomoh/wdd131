@@ -17,27 +17,27 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Welcome to Roadside Lodge",
             subtitle: "Your Comfort Is Our Ultimate Desire",
-            bg: "images/roadside-lodge.webp"
+            bg: "./images/roadside-lodge.webp"
         },
         {
             title: "Joseph B. Sakila",
             subtitle: "CEO • aka Joe Kissino",
-            bg: "images/ceo1.webp"
+            bg: "./images/ceo1.webp"
         },
         {
             title: "Patricia Sakila",
             subtitle: "Deputy CEO • aka Pat Kissino",
-            bg: "images/depceo1.webp"
+            bg: "./images/depceo1.webp"
         },
         {
             title: "The Official Launching Program",
             subtitle: "",
-            bg: "images/food1.webp"
+            bg: "./images/food1.webp"
         },
         {
             title: "Coming Soon...",
             subtitle: "Keep following us for updates",
-            bg: "images/hero-small.webp"
+            bg: "./images/hero-small.webp"
         }
     ];
 
