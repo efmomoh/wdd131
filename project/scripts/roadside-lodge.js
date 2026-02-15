@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Food, Drinks & Entertainment",
             description: "Entertainment center, live shows & quality food.",
-            image: "images/food1.webp",
+            image: "images/food.webp",
             slideIndex: 1
         },
         {
