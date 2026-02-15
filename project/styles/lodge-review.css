@@ -1,3 +1,15 @@
+/* LODGE REVIEW CSS  */
+
+:root {
+    --border1: #ccc;
+    --border2: #eee;
+    --text-color1: #ccc;
+    --text-color2: #fff;
+    --bg-color1: #fff;
+    --bg-color2: #d46b12;
+    --bg-color3: #fdfdfd;
+}
+
 /* Star rating */
 .star-rating {
     direction: rtl;
@@ -13,7 +25,7 @@
 
 .star-rating label {
     cursor: pointer;
-    color: #ccc;
+    color: var(--text-color1);
     transition: color 0.3s;
     padding: 0 4px;
 }
@@ -30,7 +42,7 @@
 
 /* Form styling */
 #review-form {
-    background: #fff;
+    background: var(-);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -39,12 +51,26 @@
     font-family: "Roboto", sans-serif;
 }
 
+.xperience-h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 h4 {
     text-align: center;
 }
 
+#reviews {
+    margin-top: 1rem;
+}
+
 #display-reviews {
     margin: 2rem;
+}
+
+fieldset {
+    margin-top: 1rem;
 }
 
 #review-form label,
@@ -52,6 +78,16 @@ h4 {
     font-weight: bold;
     display: block;
     margin-top: 10px;
+}
+
+#review-form label {
+    margin-inline: 0.5rem;
+}
+
+
+#review-form input[type="checkbox"],
+#review-form input[type="radio"] {
+    margin-right: 0.5rem;
 }
 
 #review-form input[type="text"],
@@ -62,14 +98,28 @@ h4 {
     padding: 8px;
     margin-top: 4px;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border1);
+}
+
+#review-form select {
+    appearance: none;
+}
+
+#review-form input[type="text"],
+#review-form input[type="date"],
+#review-form select {
+    height: 44px;
+}
+
+#review-form textarea {
+    height: 100px;
 }
 
 #review-form button {
     margin-top: 15px;
     padding: 10px 20px;
     background: var(--accent);
-    color: #fff;
+    color: var(--text-color2);
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -77,7 +127,7 @@ h4 {
 }
 
 #review-form button:hover {
-    background: #d46b12;
+    background: var(--bg-color2);
 }
 
 /* Display reviews */
@@ -89,8 +139,8 @@ h4 {
 }
 
 .review-card {
-    background: #fdfdfd;
-    border: 1px solid #eee;
+    background: var(--bg-color3);
+    border: 1px solid var(--border2);
     border-radius: 10px;
     padding: 12px;
     margin-bottom: 12px;

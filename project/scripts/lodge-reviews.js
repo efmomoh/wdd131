@@ -1,3 +1,9 @@
+// ================= NAV MENU =================
+const toggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+toggle.addEventListener('click', () =>
+    navLinks.classList.toggle('show'));
+
 const form = document.getElementById("review-form");
 const reviewsContainer = document.getElementById("reviews-container");
 
@@ -53,3 +59,7 @@ function displayReview(review) {
 
     reviewsContainer.prepend(card);
 }
+
+// ================= FOOTER =================
+document.querySelector("#company").textContent = "Roadside Lodge 🏩 Your Comfort Is Our Ultimate Desire 🏨";
+document.querySelector("#copyright").textContent = `@ ${new Date().getFullYear()} Roadside Lodge. All Rights Reserved.`;

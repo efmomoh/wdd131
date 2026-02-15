@@ -1,10 +1,19 @@
-/* form submission CSS file  */
+/* form submitted CSS file  */
 
+:root {
+    --bg-color1: #fff;
+    --bg-color2: #E67E22;
+    --bg-color3: #d35400;
+
+    --text-color1: #fff;
+    --text-color2: #2C3E50;
+    --text-color3: #27AE60;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(120deg, #2C3E50, #34495E);
-    color: white;
+    color: var(--text-color1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,8 +22,8 @@ body {
 
 /* Card */
 .success-card {
-    background: white;
-    color: #2C3E50;
+    background: var(--bg-color1);
+    color: var(--text-color2);
     padding: 30px;
     border-radius: 10px;
     width: 90%;
@@ -25,7 +34,7 @@ body {
 
 .success-card h1 {
     text-align: center;
-    color: #27AE60;
+    color: var(--text-color3);
 }
 
 .success-card p {
@@ -39,15 +48,15 @@ body {
     text-align: center;
     margin-top: 20px;
     padding: 12px;
-    background: #E67E22;
-    color: white;
+    background: var(--bg-color2);
+    color: var(--text-color1);
     text-decoration: none;
     border-radius: 6px;
     transition: 0.3s;
 }
 
 .home-btn:hover {
-    background: #d35400;
+    background: var(--bg-color3);
     transform: scale(1.05);
 }
 

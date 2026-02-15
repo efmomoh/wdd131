@@ -17,7 +17,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 
     <!-- SCRIPTS -->
-    <!-- <script src="scripts/roadside-lodge.js" defer></script> -->
     <script src="scripts/lodge-reviews.js" defer></script>
 </head>
 
@@ -47,19 +46,20 @@
 
             <section id="reviews">
 
-                <h3>Share Your Experience</h3>
+                <h3 class="xperience-h3">Share Your Experience</h3>
                 <form id="review-form">
                     <!-- Name -->
                     <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    <input type="text" id="name" name="name" autocomplete="name" required placeholder="Enter your name">
 
                     <!-- Date -->
                     <label for="visit-date">Date of Visit:</label>
                     <input type="date" id="visit-date" name="date" required>
 
                     <!-- Room / Visit Type -->
-                    <label for="room-type">Room / Visit Type:</label>
+                    <label for="room-type">Room / Visit Type: </label>
                     <select id="room-type" name="room">
+                        <option value="" selected disabled>Choose type...&#9660;</option>
                         <option value="standard">Standard</option>
                         <option value="deluxe">Deluxe</option>
                         <option value="suite">Suite</option>
@@ -111,7 +111,7 @@
                     <textarea id="message" name="message" rows="4" placeholder="Write your review..."
                         required></textarea>
 
-                    <button type="submit">Submit Review</button>
+                    <button type="submit">Post Review</button>
                 </form>
 
                 <!-- Display Reviews -->
@@ -120,13 +120,23 @@
                     <div id="reviews-container"></div>
                 </section>
             </section>
-
-
     </main>
+
     <!-- FOOTER -->
     <footer class="footer">
         <p id="company"></p>
         <p id="copyright"></p>
+        <p class="privacy">
+            <a href="#">Privacy Policy</a> <br>
+            <a href="#">MIT Licensed</a>
+        </p>
+        <section class="socila-media">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </section>
     </footer>
 </body>
 

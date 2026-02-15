@@ -246,5 +246,5 @@ persons.forEach(person => {
 
 
 // footer 
-const company = document.querySelector("#company").textContent = `Roadside Lodge ~ Your Comfort Is Our Ultimate Desire`;
+const company = document.querySelector("#company").textContent = `Roadside Lodge 🏩 Your Comfort Is Our Ultimate Desire 🏨`;
 const currentYear = document.querySelector("#copyright").textContent = `@ ${new Date().getFullYear()} Roadside Lodge. All Rights Reserved.`

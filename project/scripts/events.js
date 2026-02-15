@@ -220,5 +220,5 @@ renderEvents();
 
 
 //    FOOTER
-document.querySelector("#company").textContent = "Roadside Lodge ~ Your Comfort Is Our Ultimate Desire";
+document.querySelector("#company").textContent = "Roadside Lodge 🏩 Your Comfort Is Our Ultimate Desire 🏨";
 document.querySelector("#copyright").textContent = `@ ${new Date().getFullYear()} Roadside Lodge. All Rights Reserved.`;

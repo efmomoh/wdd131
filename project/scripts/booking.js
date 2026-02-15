@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // SHOW ROOM
     roomInfo.innerHTML = `
         <div class="booking-card">
-            <h2>${selectedRoom.name}</h2>
+            <h2 class="header-2">${selectedRoom.name}</h2>
             <p><strong>Type:</strong> ${selectedRoom.type}</p>
             <p><strong>Price per Night:</strong> $${selectedRoom.price}</p>
             <p id="total-price"><strong>Total:</strong> $0</p>
@@ -132,5 +132,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //    FOOTER
-document.querySelector("#company").textContent = "Roadside Lodge ~ Your Comfort Is Our Ultimate Desire";
+document.querySelector("#company").textContent = "Roadside Lodge 🏩 Your Comfort Is Our Ultimate Desire 🏨";
 document.querySelector("#copyright").textContent = `@ ${new Date().getFullYear()} Roadside Lodge. All Rights Reserved.`;

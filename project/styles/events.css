@@ -1,10 +1,27 @@
 /* ================= GENERAL ================= */
+
+:root {
+    --border: #eee;
+    --border2: #f1f1f1;
+    --border3: #ddd;
+
+    --color1: #333;
+    --color2: #222;
+    --color3: #555;
+    --color4: #999;
+    --color-5: #fff;
+    --color-6: #ff4d4f;
+
+    --bg-color1: #f4f6f9;
+    --bg-color2: #fff;
+    --bg-color3: #007bff;
+
+}
 body {
     font-family: 'Segoe UI', Tahoma, "Geneva", Verdana, sans-serif;
-    background: #f4f6f9;
+    background: var(--bg-color1);
     margin: 0;
-    padding: 20px;
-    color: #333;
+    color: var(--color1);
 }
 
 .gallery {
@@ -15,12 +32,12 @@ body {
 .gallery h1 {
     font-size: 32px;
     margin-bottom: 5px;
-    color: #222;
+    color: var(--color2);
 }
 
 .gallery p {
     font-size: 16px;
-    color: #555;
+    color: var(--color3);
 }
 
 /* ================= EVENTS GRID ================= */
@@ -33,7 +50,7 @@ body {
 
 /* ================= CARD ================= */
 .card {
-    background: #fff;
+    background: var(-bg-color2);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -51,7 +68,7 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border);
 }
 
 .card-content {
@@ -62,19 +79,19 @@ body {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 5px;
-    color: #222;
+    color: var(--color2);
 }
 
 .card-date {
     font-size: 12px;
-    color: #999;
+    color: var(--color4);
     margin-bottom: 10px;
 }
 
 .card-description {
     font-size: 14px;
     margin-bottom: 10px;
-    color: #555;
+    color: var(--color3);
 }
 
 .stats {
@@ -109,17 +126,17 @@ body {
 
 .like-btn {
     background: linear-gradient(135deg, #28a745, #20c997);
-    color: white;
+    color: var(--color-5);
 }
 
 .dislike-btn {
     background: linear-gradient(135deg, #dc3545, #e55353);
-    color: white;
+    color: var(--color-5);
 }
 
 .comment-btn {
     background: linear-gradient(135deg, #007bff, #00a3ff);
-    color: white;
+    color: var(--color-5);
 }
 
 /* ================= COMMENTS MODAL ================= */
@@ -137,7 +154,7 @@ body {
 }
 
 .modal-content {
-    background: #fff;
+    background: var(--bg-color2);
     max-width: 500px;
     margin: 5% auto;
     border-radius: 12px;
@@ -150,24 +167,24 @@ body {
     max-height: 250px;
     overflow-y: auto;
     margin-bottom: 15px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     padding: 10px 0;
 }
 
 .comment-item {
     padding: 8px 0;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid var(--border2);
 }
 
 .comment-name {
     font-weight: bold;
-    color: #222;
+    color: var(--color2);
 }
 
 .comment-date {
     font-size: 11px;
-    color: gray;
+    color: var(--color4);
     margin-bottom: 4px;
 }
 
@@ -178,8 +195,8 @@ body {
     padding: 4px 6px;
     border-radius: 5px;
     cursor: pointer;
-    background: #007bff;
-    color: #fff;
+    background: var(--bg-color3);
+    color: var(--color-5);
     transition: opacity 0.2s;
 }
 
@@ -193,7 +210,7 @@ body {
     padding: 10px;
     margin: 8px 0;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid ;
     font-size: 14px;
 }
 
@@ -209,8 +226,8 @@ body {
     font-weight: bold;
     border: none;
     cursor: pointer;
-    background: #007bff;
-    color: white;
+    background: var(--bg-color3);
+    color: var(--color-5);
     transition: transform 0.1s ease, opacity 0.2s ease;
 }
 
@@ -252,13 +269,13 @@ body {
     top: 20px;
     right: 30px;
     font-size: 40px;
-    color: #fff;
+    color: var(--color-5);
     cursor: pointer;
     transition: color 0.2s;
 }
 
 .media-close:hover {
-    color: #ff4d4f;
+    color: var(--color-6);
 }
 
 /* ===== MEDIA NAVIGATION BUTTONS ===== */
@@ -269,7 +286,7 @@ body {
     background: rgba(0, 0, 0, 0.3);
     border: none;
     font-size: 50px;
-    color: white;
+    color: var(--color-5);
     cursor: pointer;
     padding: 0 20px;
     border-radius: 50%;
@@ -295,10 +312,6 @@ body {
     .card img,
     .card video {
         height: 180px;
-    }
-
-    .actions {
-        flex-direction: column;
     }
 
     .modal-content {

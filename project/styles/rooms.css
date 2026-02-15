@@ -1,9 +1,19 @@
+/* ROOM CSS  */
+
+:root {
+    --text-color1: #2C3E50;
+    --text-color2: #fff;
+    --bg-color1: #fff;
+    --bg-color2: #E67E22;
+    --bg-color3: #d35400;
+}
+
 .rooms-container {
     max-width: 1000px;
     margin: auto;
     padding: 2rem;
     font-family: Arial, sans-serif;
-    color: #2C3E50;
+    color: var(--text-color1);
 }
 
 .rooms-hero {
@@ -18,7 +28,7 @@
 }
 
 .room-card {
-    background: #fff;
+    background: var(--bg-color1);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -48,8 +58,8 @@
 .room-info button {
     margin-top: 1rem;
     padding: 10px 15px;
-    background: #E67E22;
-    color: #fff;
+    background: var(--bg-color2);
+    color: var(--text-color2);
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -57,6 +67,6 @@
 }
 
 .room-info button:hover {
-    background: #d35400;
+    background: var(--bg-color3);
     transform: scale(1.05);
 }

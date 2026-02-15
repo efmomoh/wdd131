@@ -1,9 +1,30 @@
+/* styles bookink and booking confirmation  */
+
+:root {
+    --color1: #2C3E50;
+    --color2: #fff;
+    --color3: #ccc;
+    --color4: #E67E22;
+    --bg1: #fff;
+    --bg2: #E67E22;
+    --bg3: #d35400;
+    --bg4: #27ae60;
+    --border1: #ccc;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: start;
+}
+
 .booking-container {
-    max-width: 800px;
-    margin: auto;
+    max-width: 500px;
+    margin: 2rem auto;
     padding: 2rem;
     font-family: Arial, sans-serif;
-    color: #2C3E50;
+    color: var(--color1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
 }
 
 .booking-hero {
@@ -17,11 +38,17 @@
 
 .room-card {
     display: flex;
-    background: #fff;
+    background: var(--bg1);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     margin-bottom: 2rem;
+}
+
+#review-message {
+    height: 70px;
+    padding: 10px;
+    font-size: 1.1rem;
 }
 
 .room-card img {
@@ -32,6 +59,10 @@
 
 .room-info {
     padding: 1rem;
+}
+
+.header-2 {
+    text-align: start;
 }
 
 .room-info h2 {
@@ -47,13 +78,13 @@
 .input-group label {
     margin: 0.1rem 0.5rem;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .input-group input {
     padding: 10px;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border1);
     font-size: 1rem;
     height: 44px;
 }
@@ -61,16 +92,16 @@
 .send-btn {
     width: 100%;
     padding: 12px;
-    background: #E67E22;
+    background: var(--bg2);
     border: none;
-    color: white;
+    color: var(--color2);
     font-size: 1rem;
     border-radius: 6px;
     cursor: pointer;
 }
 
 .send-btn:hover {
-    background: #d35400;
+    background: var(--bg3);
     transform: scale(1.02);
 }
 
@@ -81,48 +112,14 @@
 #success-box {
     text-align: center;
     padding: 2rem;
-    background: #27ae60;
-    color: #fff;
+    background: var(--bg4);
+    color: var(--color2);
     border-radius: 10px;
 }
 
 .booking-card {
-    background: #fff;
-    color: #2C3E50;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    margin-bottom: 2rem;
-}
-
-.booking-card hr {
-    margin: 1rem 0;
-    border: 0.5px solid #ccc;
-}
-
-.actions {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.actions a.send-btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 6px;
-    background: #E67E22;
-    transition: 0.3s;
-}
-
-.actions a.send-btn:hover {
-    background: #d35400;
-}
-
-/* ....confirmation page styles addition  */
-.booking-card {
-    background: #fff;
-    color: #2C3E50;
+    background: var(--bg1);
+    color: var(--color1);
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -131,7 +128,7 @@
 
 .booking-card hr {
     margin: 1rem 0;
-    border: 0.5px solid #ccc;
+    border: 0.5px solid var(--border1);
 }
 
 .actions {
@@ -143,16 +140,48 @@
 .actions a.send-btn {
     text-decoration: none;
     padding: 10px 20px;
-    color: white;
+    color: var(--color2);
     border-radius: 6px;
-    background: #E67E22;
+    background: var(--bg2);
     transition: 0.3s;
 }
 
 .actions a.send-btn:hover {
-    background: #d35400;
+    background: var(--bg3);
 }
 
+/* ....confirmation page styles addition  */
+.booking-card {
+    background: var(--color2);
+    color: var(--color1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.booking-card hr {
+    margin: 1rem 0;
+    border: 0.5px solid var(--border1);
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.actions a.send-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--color2);
+    border-radius: 6px;
+    background: var(--bg2);
+    transition: 0.3s;
+}
+
+.actions a.send-btn:hover {
+    background: var(--bg3);
+}
 
 /* stars rating  */
 .rating {
@@ -168,7 +197,7 @@
 }
 
 .rating label {
-    color: #ccc;
+    color: var(--color3);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -176,18 +205,16 @@
 .rating label:hover,
 .rating label:hover~label,
 .rating input:checked~label {
-    color: #E67E22;
+    color: var(--color4);
 }
-
-
 
 #reviews-container {
     margin-top: 1rem;
 }
 
 .review-card {
-    background: #ECF0F1;
-    color: #2C3E50;
+    background: var(--bg1);
+    color: var(--color1);
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -203,8 +230,7 @@
 }
 
 .review-card .review-stars {
-    color: #E67E22;
+    color: var(--color4);
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
 }
-

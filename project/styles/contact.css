@@ -1,7 +1,14 @@
 /* ===== Base ===== */
 
 :root {
-    --text-color: white;
+    --border: #ccc;
+    --border1: #E67E22;
+    --text-color: #fff;
+    --text-color2: #2C3E50;
+    --text-color3: #888;
+    --text-color4: #e74c3c;
+    --bg1: #f8f9fa;
+    --bg2: #d35400;
     --bg-radiant: #2C3E50;
     --bg2-radiant: #34495E;
 }
@@ -45,8 +52,8 @@ body {
 
 /* ===== Form Card ===== */
 #contact-form {
-    background: white;
-    color: #2C3E50;
+    background: var(--text-color);
+    color: var(--text-color2);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -63,23 +70,23 @@ body {
     width: 100%;
     padding: 14px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     border-radius: 6px;
-    background: #f8f9fa;
+    background: var(--bg1);
     outline: none;
     transition: border 0.25s, box-shadow 0.25s;
 }
 
 /* Placeholder Style */
 ::placeholder {
-    color: #888;
+    color: var(--text-color3);
     font-size: 0.95rem;
 }
 
 /* Focus */
 .input-group input:focus,
 .input-group textarea:focus {
-    border-color: #E67E22;
+    border-color: var(--border1);
     box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.15);
 }
 
@@ -87,7 +94,7 @@ body {
 .error {
     display: block;
     font-size: 0.8rem;
-    color: #e74c3c;
+    color: var(--text-color4);
     margin-top: 4px;
 }
 
@@ -96,7 +103,7 @@ body {
     display: block;
     text-align: right;
     font-size: 0.8rem;
-    color: #888;
+    color: var(--text-color3);
     margin-top: 3px;
 }
 
@@ -105,16 +112,16 @@ body {
     width: 100%;
     padding: 14px;
     font-size: 1rem;
-    background: #E67E22;
+    background: var(--border1);
     border: none;
     border-radius: 6px;
-    color: white;
+    color: var(--text-color);
     cursor: pointer;
     transition: 0.25s;
 }
 
 .send-btn:hover {
-    background: #d35400;
+    background: var(--bg2);
     transform: translateY(-1px);
 }
 
@@ -122,8 +129,8 @@ body {
 #success-box {
     margin-top: 2rem;
     text-align: center;
-    background: white;
-    color: #2C3E50;
+    background: var(--text-color);
+    color: var(--text-color2);
     padding: 2rem;
     border-radius: 10px;
     animation: fadeIn 0.5s ease;
@@ -146,7 +153,7 @@ body {
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     .contact-container {
         padding: 1.2rem;
     }

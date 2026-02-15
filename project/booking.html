@@ -55,25 +55,25 @@
 
             <div class="input-group">
                 <label for="guests">Number of Guests *</label>
-                <input type="number" id="guests" min="1" required>
+                <input type="number" id="guests" min="1" placeholder="eg. 1, 2, 3, 4" required>
                 <span class="error"></span>
             </div>
 
             <div class="input-group">
                 <label for="name">Full Name *</label>
-                <input type="text" id="name" autocomplete="name" required>
+                <input type="text" id="name" autocomplete="name" placeholder="Enter your name" required>
                 <span class="error"></span>
             </div>
 
             <div class="input-group">
                 <label for="email">Email *</label>
-                <input type="email" id="email" autocomplete="email" required>
+                <input type="email" id="email" autocomplete="email" placeholder="Enter your email" required>
                 <span class="error"></span>
             </div>
 
             <div class="input-group">
                 <label for="phone">Phone *</label>
-                <input type="tel" id="phone" autocomplete="tel" required>
+                <input type="tel" id="phone" autocomplete="tel" placeholder="+8618662211544" required>
                 <span class="error"></span>
             </div>
 
@@ -89,7 +89,7 @@
         <section id="review-section" class="hidden">
             <h3>Rate Your Room</h3>
             <p>Let us know how you liked your stay!</p>
-        
+
             <form id="review-form">
                 <div class="rating">
                     <input type="radio" name="rating" id="star5" value="5">
@@ -103,20 +103,20 @@
                     <input type="radio" name="rating" id="star1" value="1">
                     <label for="star1" title="1 star">★</label>
                 </div>
-        
+
                 <section class="input-group">
                     <label for="review-name">Your Name</label>
                     <input type="text" id="review-name" placeholder="John Doe" required>
                 </section>
-        
+
                 <section class="input-group">
                     <label for="review-message">Message</label>
                     <textarea id="review-message" rows="3" placeholder="Write your review here..." required></textarea>
                 </section>
-        
-                <input type="submit" value="Submit Review" class="send-btn">
+
+                <input type="submit" value="Post Review" class="send-btn">
             </form>
-        
+
             <section id="review-success" class="hidden">
                 <h4>✔ Thank you for your feedback!</h4>
                 <p>Your review has been recorded.</p>

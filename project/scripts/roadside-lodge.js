@@ -106,13 +106,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     hero.addEventListener("touchend", e => {
         const diff = startX - e.changedTouches[0].clientX;
-        if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide(), resetAutoPlay();
+        if (Math.abs(diff) > 50)
+            diff > 0 ? nextSlide() : prevSlide(), resetAutoPlay();
     }, { passive: true });
 
     hero.addEventListener("mousedown", e => startX = e.clientX);
     hero.addEventListener("mouseup", e => {
         const diff = startX - e.clientX;
-        if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide(), resetAutoPlay();
+        if (Math.abs(diff) > 50)
+            diff > 0 ? nextSlide() : prevSlide(), resetAutoPlay();
     });
 
     document.addEventListener("keydown", e => {
@@ -227,6 +229,6 @@ document.addEventListener("DOMContentLoaded", () => {
     about.appendChild(aboutPara);
 
     // ================= FOOTER =================
-    document.querySelector("#company").textContent = "Roadside Lodge ~ Your Comfort Is Our Ultimate Desire";
+    document.querySelector("#company").textContent = "Roadside Lodge 🏩 Your Comfort Is Our Ultimate Desire 🏨";
     document.querySelector("#copyright").textContent = `@ ${new Date().getFullYear()} Roadside Lodge. All Rights Reserved.`;
 });
