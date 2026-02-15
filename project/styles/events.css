@@ -55,7 +55,7 @@ main {
 
 /* ================= CARD ================= */
 .card {
-    background: var(-bg-color2);
+    background: var(--bg-color2);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
