@@ -12,7 +12,10 @@ const defaultEvents = [
         src: "videos/raggae.mp4",
         title: "Tech Conference 2025",
         description: "Highlights from the global tech conference.",
-        date: "2025-12-10", views: 0, likes: 0, dislikes: 0,
+        date: "2025-12-10",
+        views: 0,
+        likes: 0,
+        dislikes: 0,
         comments: []
     },
     {
@@ -28,7 +31,7 @@ const defaultEvents = [
     },
     {
         type: "image",
-        src: "/images/efm.webp",
+        src: "images/efm.webp",
         title: "Hotel Grand Opening",
         description: "Opening ceremony celebration.",
         date: "2025-11-02",

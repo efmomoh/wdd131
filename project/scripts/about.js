@@ -54,7 +54,7 @@ const persons = [
         name: "Joseph Sakila",
         role: "CEO & Founder",
         status: "Employer",
-        image: "/images/ceo.webp",
+        image: "images/ceo.webp",
         year: "2025",
         media: [
             {
@@ -72,7 +72,7 @@ const persons = [
         name: "Patricia Kollie",
         role: "Deputy CEO & Co-Founder",
         status: "Employer",
-        image: "/images/depceo.webp",
+        image: "images/depceo.webp",
         year: "2025",
         media: [
             {
@@ -90,7 +90,7 @@ const persons = [
         name: "Daniel Sakila",
         role: "Manager",
         status: "Employee",
-        image: "/images/ceo.webp",
+        image: "images/ceo.webp",
         year: "2025",
         media: [
             {
@@ -108,7 +108,7 @@ const persons = [
         name: "Enssah Fayia Momoh",
         role: "Supervisor",
         status: "Employee",
-        image: "/images/efm.webp",
+        image: "images/efm.webp",
         year: "2025",
         media: [
             {
@@ -126,7 +126,7 @@ const persons = [
         name: "Enssah Fayia Momoh",
         role: "Supervisor",
         status: "Employee",
-        image: "/images/efm.webp",
+        image: "images/efm.webp",
         year: "2025",
         media: [
             {
@@ -144,7 +144,7 @@ const persons = [
         name: "Enssah Fayia Momoh",
         role: "Supervisor",
         status: "Employee",
-        image: "/images/efm.webp",
+        image: "images/efm.webp",
         year: "2025",
         media: [
             {
@@ -162,7 +162,7 @@ const persons = [
         name: "Enssah Fayia Momoh",
         role: "Supervisor",
         status: "Employee",
-        image: "/images/efm.webp",
+        image: "images/efm.webp",
         year: "2025",
         media: [
             {
@@ -180,7 +180,7 @@ const persons = [
         name: "Enssah Fayia Momoh",
         role: "Supervisor",
         status: "Employee",
-        image: "/images/efm.webp",
+        image: "images/efm.webp",
         year: "2025",
         media: [
             {
