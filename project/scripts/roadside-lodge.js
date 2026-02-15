@@ -175,19 +175,19 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Food, Drinks & Entertainment",
             description: "Entertainment center, live shows & quality food.",
-            image: "images/food.webp",
+            image: "",
             slideIndex: 1
         },
         {
             title: "Community Cultural Festival",
             description: "Celebrating Liberian culture with music, dance, and food.",
-            image: "images/event-enssah.webp",
+            image: "",
             slideIndex: 2
         },
         {
             title: "Weekend Lounge Nights",
             description: "Relax with drinks, music, and social vibes.",
-            image: "images/efm.webp",
+            image: "",
             slideIndex: 3
         }
     ];
