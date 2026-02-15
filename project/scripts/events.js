@@ -152,7 +152,8 @@ function showMedia() {
         vid.controls = true;
         vid.autoplay = true;
         mediaContent.appendChild(vid);
-    } else {
+    }
+    else {
         const img = document.createElement("img");
         img.src = event.src;
         img.alt = event.title;

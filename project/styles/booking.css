@@ -9,6 +9,7 @@
     --bg2: #E67E22;
     --bg3: #d35400;
     --bg4: #27ae60;
+    --bg5: #2C3E50;
     --border1: #ccc;
 }
 
@@ -92,7 +93,7 @@ h1 {
 .send-btn {
     width: 100%;
     padding: 12px;
-    background: var(--bg2);
+    background: var(--bg5);
     border: none;
     color: var(--color2);
     font-size: 1rem;

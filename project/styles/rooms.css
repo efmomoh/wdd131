@@ -4,8 +4,8 @@
     --text-color1: #2C3E50;
     --text-color2: #fff;
     --bg-color1: #fff;
-    --bg-color2: #E67E22;
-    --bg-color3: #d35400;
+    --bg-color2: #d35400;
+    --bg-color3: #2C3E50;
 }
 
 .rooms-container {
@@ -58,7 +58,7 @@
 .room-info button {
     margin-top: 1rem;
     padding: 10px 15px;
-    background: var(--bg-color2);
+    background: var(--bg-color3);
     color: var(--text-color2);
     border: none;
     border-radius: 6px;
@@ -67,6 +67,6 @@
 }
 
 .room-info button:hover {
-    background: var(--bg-color3);
+    background: var(--bg-color2);
     transform: scale(1.05);
 }
