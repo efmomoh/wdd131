@@ -108,7 +108,7 @@ const persons = [
         name: "Enssah Fayia Momoh",
         role: "Supervisor",
         status: "Employee",
-        image: "images/efm.webp",
+        image: "images/enssah.webp",
         year: "2025",
         media: [
             {
@@ -126,7 +126,7 @@ const persons = [
         name: "Enssah Fayia Momoh",
         role: "Supervisor",
         status: "Employee",
-        image: "images/efm.webp",
+        image: "images/enssah.webp",
         year: "2025",
         media: [
             {
@@ -144,7 +144,7 @@ const persons = [
         name: "Enssah Fayia Momoh",
         role: "Supervisor",
         status: "Employee",
-        image: "images/efm.webp",
+        image: "images/enssah.webp",
         year: "2025",
         media: [
             {
@@ -162,7 +162,7 @@ const persons = [
         name: "Enssah Fayia Momoh",
         role: "Supervisor",
         status: "Employee",
-        image: "images/efm.webp",
+        image: "images/enssah.webp",
         year: "2025",
         media: [
             {
@@ -180,7 +180,7 @@ const persons = [
         name: "Enssah Fayia Momoh",
         role: "Supervisor",
         status: "Employee",
-        image: "images/efm.webp",
+        image: "images/enssah.webp",
         year: "2025",
         media: [
             {
