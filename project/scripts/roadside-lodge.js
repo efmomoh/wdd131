@@ -1,9 +1,10 @@
+// ================= NAV MENU =================
+const toggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+toggle.addEventListener('click', () =>
+    navLinks.classList.toggle('show'));
+
 document.addEventListener("DOMContentLoaded", () => {
-    // ================= NAV MENU =================
-    const toggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () =>
-        navLinks.classList.toggle('show'));
 
     // ================= HERO SLIDER =================
     const hero = document.querySelector(".hero");
@@ -17,27 +18,35 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Welcome to Roadside Lodge",
             subtitle: "Your Comfort Is Our Ultimate Desire",
-            bg: "images/roadside-lodge.webp"
+            bg: "images/roadside-lodge.webp",
+            loading: "lazy"
         },
         {
             title: "Joseph B. Sakila",
             subtitle: "CEO • aka Joe Kissino",
-            bg: "images/ceo.webp"
+            bg: "images/ceo.webp",
+            loading: "lazy"
+
         },
         {
             title: "Patricia Sakila",
             subtitle: "Deputy CEO • aka Pat Kissino",
-            bg: "images/depceo.webp"
+            bg: "images/depceo.webp",
+            loading: "lazy"
+
         },
         {
             title: "The Official Launching Program",
             subtitle: "Grand Opening Celebration",
-            bg: "images/food.webp"
+            bg: "images/food.webp",
+            loading: "lazy"
+
         },
         {
             title: "Coming Soon...",
             subtitle: "Keep following us for updates",
-            bg: "images/hero-small.webp"
+            bg: "images/hero-small.webp",
+            loading: "lazy"
         }
     ];
 

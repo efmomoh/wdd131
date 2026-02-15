@@ -9,7 +9,7 @@ const STORAGE_KEY = "eventsData";
 const defaultEvents = [
     {
         type: "video",
-        src: "videos/raggae.mp4",
+        src: "videos/johge.mp4",
         title: "Tech Conference 2025",
         description: "Highlights from the global tech conference.",
         date: "2025-12-10",
@@ -81,6 +81,7 @@ function renderEvents() {
             mediaEl.src = event.src;
         } else {
             mediaEl = document.createElement("img");
+            mediaEl.alt = event.title;
             mediaEl.src = event.src;
         }
 
@@ -144,6 +145,7 @@ function showMedia() {
     } else {
         const img = document.createElement("img");
         img.src = event.src;
+        img.alt = event.title;
         mediaContent.appendChild(img);
     }
 }

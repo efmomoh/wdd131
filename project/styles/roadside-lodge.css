@@ -104,13 +104,6 @@ small::before {
     color: var(--accent);
 }
 
-/* ACTIVE NAV LINK */
-.nav-links a.home-active {
-    color: var(--accent);
-    font-weight: bold;
-    border-bottom: 2px solid var(--accent);
-}
-
 /* =========================
    HERO SLIDER
 ========================= */
@@ -226,6 +219,7 @@ small::before {
     background: rgba(255, 255, 255, 0.6);
     cursor: pointer;
     transition: var(--transition);
+    margin-inline: 0.8rem;
 }
 
 .hero-indicators button.active {
@@ -385,6 +379,12 @@ small::before {
 
 /* Tablet / small desktop */
 @media (min-width: 600px) {
+
+    /* ACTIVE NAV LINK */
+    .nav-links a.home-active {
+        font-weight: bold;
+        border-bottom: 2px solid var(--accent);
+    }
 
     .menu-toggle {
         display: none;
