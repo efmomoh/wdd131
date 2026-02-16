@@ -13,17 +13,18 @@
     --border1: #ccc;
 }
 
+main {
+    height: 140vh;
+}
+
 h1 {
     font-size: 1.5rem;
     text-align: start;
 }
 
 .booking-container {
-     height: 100vh;
-    display: flex;
-    flex-direction: column;
     max-width: 500px;
-    margin: 2rem auto;
+    margin: 2rem;
     padding: 2rem;
     font-family: Arial, sans-serif;
     color: var(--color1);
