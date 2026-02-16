@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "The Official Launching Program",
             subtitle: "Grand Opening Celebration",
-            bg: "images/food.webp",
+            bg: "images/meal.webp",
             loading: "lazy"
 
         },
