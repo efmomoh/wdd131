@@ -6,7 +6,6 @@
     --color3: #ccc;
     --color4: #E67E22;
     --bg1: #fff;
-    --bg2: #E67E22;
     --bg3: #d35400;
     --bg4: #27ae60;
     --bg5: #2C3E50;
@@ -157,9 +156,9 @@ h1 {
 .actions a.send-btn {
     text-decoration: none;
     padding: 10px 20px;
-    color: var(--color2);
+    color: var(--bg5);
     border-radius: 6px;
-    background: var(--bg2);
+    background: var(--bg5);
     transition: 0.3s;
 }
 
@@ -192,7 +191,7 @@ h1 {
     padding: 10px 20px;
     color: var(--color2);
     border-radius: 6px;
-    background: var(--bg2);
+    background: var(--bg5);
     transition: 0.3s;
 }
 
