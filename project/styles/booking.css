@@ -14,7 +14,7 @@
 }
 
 main {
-    height: 150vh;
+    height: 115vh;
 }
 
 h1 {
@@ -238,4 +238,16 @@ h1 {
     color: var(--color4);
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
+}
+
+@media (min-width: 600px) {
+
+    main {
+        height: 100vh;
+    }
+
+    .booking-container {
+        margin: 2rem  auto;
+    }
+
 }
