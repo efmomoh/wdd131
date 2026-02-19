@@ -31,7 +31,7 @@ body {
 /* =========================
    HEADER
 ========================= */
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -355,7 +355,7 @@ small::before {
     margin: 2rem;
 }
 
-.footer {
+footer {
     background: var(--primary);
     color: var(--card-bg);
     text-align: center;

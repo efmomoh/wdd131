@@ -8,20 +8,16 @@
     <meta name="description" content="Information about Roadside Lodge: rooms, booking, events, and hospitality.">
     <meta name="author" content="Enssah Fayia Momoh">
 
-    <!-- STYLES -->
     <link rel="stylesheet" href="styles/roadside-lodge.css">
     <link rel="stylesheet" href="styles/lodge-review.css">
 
 
-    <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 
-    <!-- SCRIPTS -->
     <script src="scripts/lodge-reviews.js" defer></script>
 </head>
 
 <body>
-    <!-- HEADER -->
     <header class="header">
         <div class="logo">
             <strong>Roadside Lodge</strong><br>
@@ -40,7 +36,6 @@
         </nav>
     </header>
 
-    <!-- main section  -->
     <main>
         <section class="review-wrapper">
 
@@ -48,15 +43,12 @@
 
                 <h3 class="xperience-h3">Share Your Experience</h3>
                 <form id="review-form">
-                    <!-- Name -->
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" autocomplete="name" required placeholder="Enter your name">
 
-                    <!-- Date -->
                     <label for="visit-date">Date of Visit:</label>
                     <input type="date" id="visit-date" name="date" required>
 
-                    <!-- Room / Visit Type -->
                     <label for="room-type">Room / Visit Type: </label>
                     <select id="room-type" name="room">
                         <option value="" selected disabled>Choose type...&#9660;</option>
@@ -66,7 +58,6 @@
                         <option value="family">Family Room</option>
                     </select>
 
-                    <!-- Services Liked (Checkboxes) -->
                     <fieldset>
                         <legend>Services You Enjoyed:</legend>
                         <label><input type="checkbox" name="services" value="Wi-Fi"> Free Wi-Fi</label>
@@ -76,7 +67,6 @@
                         <label><input type="checkbox" name="services" value="Spa"> Spa & Wellness</label>
                     </fieldset>
 
-                    <!-- Overall Satisfaction (Radio Buttons) -->
                     <fieldset>
                         <legend>Overall Satisfaction:</legend>
                         <label><input type="radio" name="satisfaction" value="Excellent" required> Excellent</label>
@@ -85,7 +75,6 @@
                         <label><input type="radio" name="satisfaction" value="Poor"> Poor</label>
                     </fieldset>
 
-                    <!-- Star Rating -->
                     <fieldset>
                         <legend>Rate Your Stay:</legend>
                         <div class="star-rating">
@@ -106,7 +95,6 @@
                         </div>
                     </fieldset>
 
-                    <!-- Message -->
                     <label for="message">Your Feedback:</label>
                     <textarea id="message" name="message" rows="4" placeholder="Write your review..."
                         required></textarea>
@@ -114,7 +102,6 @@
                     <button type="submit">Post Review</button>
                 </form>
 
-                <!-- Display Reviews -->
                 <section id="display-reviews">
                     <h4>Guest Reviews</h4>
                     <div id="reviews-container"></div>
@@ -122,7 +109,6 @@
             </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <p id="company"></p>
         <p id="copyright"></p>

@@ -1,13 +1,8 @@
-/* --- Color Scheme --- */
 :root {
     --primary-color: #2C3E50;
-    /* Dark Blue for headings and nav */
     --accent-color: #E67E22;
-    /* Orange for buttons, links, highlights */
     --background-color: #ECF0F1;
-    /* Light grey background */
     --text-color: #2C3E50;
-    /* Main text */
 }
 
 body {
