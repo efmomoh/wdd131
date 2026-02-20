@@ -116,7 +116,7 @@ small::before {
     align-items: center;
     justify-content: center;
     color: var(--card-bg);
-    transition: 1s ease-in-out;
+    /* transition: 1s ease-in-out; */
 }
 
 .hero::before {
@@ -293,8 +293,11 @@ small::before {
 
 .event-card img {
     width: 100%;
-    height: 200px;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
+    transition: transform 0.6s ease;
+    display: block;
+    border-radius: 6px;
     transition: transform 0.6s ease;
 }
 
@@ -359,8 +362,10 @@ footer {
     background: var(--primary);
     color: var(--card-bg);
     text-align: center;
-    padding: 25px 15px;
+    padding: 10px 15px;
     font-size: 14px;
+    position: relative;
+    bottom: 0;
 }
 
 /* =========================
@@ -444,19 +449,12 @@ footer {
         padding: 25px;
     }
 
-    .event-card img {
-        height: 220px;
-    }
-
     .about,
     .review {
         padding: 60px 25px;
         font-size: 1.2rem;
     }
-}
 
-/* Desktop */
-@media (min-width: 1024px) {
     .hero {
         height: 75vh;
     }
@@ -495,9 +493,11 @@ footer {
         padding: 30px;
     }
 
-    .event-card img {
+    /* .event-card img {
+        width: 410px;
         height: 250px;
-    }
+        object-fit: cover;
+    } */
 
     .about,
     .review {
@@ -505,3 +505,8 @@ footer {
         font-size: 1.25rem;
     }
 }
+
+/* Desktop */
+/* @media (min-width: 1024px) {
+    
+} */

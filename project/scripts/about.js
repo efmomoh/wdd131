@@ -54,7 +54,7 @@ const persons = [
         name: "Joseph Sakila",
         role: "CEO & Founder",
         status: "Employer",
-        image: "images/ceo.webp",
+        image: "images/enssah.webp",
         year: "2025",
         media: [
             {
@@ -72,7 +72,7 @@ const persons = [
         name: "Patricia Kollie",
         role: "Deputy CEO & Co-Founder",
         status: "Employer",
-        image: "images/depceo.webp",
+        image: "images/enssah.webp",
         year: "2025",
         media: [
             {
@@ -90,7 +90,7 @@ const persons = [
         name: "Daniel Sakila",
         role: "Manager",
         status: "Employee",
-        image: "images/ceo.webp",
+        image: "images/enssah.webp",
         year: "2025",
         media: [
             {
